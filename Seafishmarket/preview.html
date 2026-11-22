@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sea Fish Market</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f7fa;
+  color: #173344;
+}
+header {
+  background: #003b59;
+  color: white;
+  padding: 22px;
+  text-align: center;
+}
+header h1 { margin: 0; }
+nav {
+  background: #00658a;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px;
+}
+button, .nav-button {
+  background: #00a5b5;
+  border: none;
+  color: white;
+  padding: 11px 17px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+}
+button:hover, .nav-button:hover { background: #007d91; }
+.hero {
+  text-align: center;
+  padding: 40px 15px;
+  background: #d8f3f6;
+}
+.hero h2 { color: #004b68; }
+.search-area {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+input {
+  padding: 12px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  width: 250px;
+}
+main { padding: 20px; }
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+  gap: 18px;
+}
+.product {
+  background: white;
+  padding: 18px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 9px #0001;
+}
+.product .fish {
+  font-size: 65px;
+}
+.product h3 { color: #00516c; }
+.price {
+  font-size: 20px;
+  color: #00845d;
+  font-weight: bold;
+}
+section {
+  background: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+.hidden { display: none; }
+footer {
+  background: #003b59;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+a { color: inherit; }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🐟 SEA FISH MARKET</h1>
+  <p>Fresh Seafood | Best Quality | Best Price</p>
+</header>
+
+<nav>
+  <button onclick="showSection('home')">Home</button>
+  <button onclick="showSection('products')">Search</button>
+  <button onclick="sendSMS()">SMS</button>
+  <button onclick="showSection('about')">About</button>
+  <button onclick="showSection('settings')">Settings</button>
+  <button onclick="showSection('privacy')">Privacy</button>
+  <button onclick="showSection('analytics')">Search Analytics</button>
+</nav>
+
+<div id="home">
+  <div class="hero">
+    <h2>Welcome to Sea Fish Market</h2>
+    <p>Discover fresh fish and seafood at great prices.</p>
+    <button onclick="showSection('products')">
+      Explore Products
+    </button>
+  </div>
+</div>
+
+<div id="products">
+  <div class="search-area">
+    <input id="searchInput"
+      type="search"
+      placeholder="Search fish, shrimp, crab..."
+      oninput="searchFish()">
+    <button onclick="searchFish()">Search</button>
+  </div>
+
+  <main>
+    <h2>Our Seafood Products</h2>
+    <div class="products" id="productList">
+
+      <div class="product" data-name="salmon">
+        <div class="fish">🐟</div>
+        <h3>Fresh Salmon</h3>
+        <p>Premium quality salmon.</p>
+        <p class="price">৳ 1,200 / kg</p>
+        <button onclick="purchase('Fresh Salmon')">Purchase</button>
+      </div>
+
+      <div class="product" data-name="shrimp prawn">
+        <div class="fish">🦐</div>
+        <h3>Fresh Shrimp</h3>
+        <p>Fresh sea shrimp.</p>
+        <p class="price">৳ 900 / kg</p>
+        <button onclick="purchase('Fresh Shrimp')">Purchase</button>
+      </div>
+
+      <div class="product" data-name="crab">
+        <div class="fish">🦀</div>
+        <h3>Sea Crab</h3>
+        <p>Fresh quality sea crab.</p>
+        <p class="price">৳ 750 / kg</p>
+        <button onclick="purchase('Sea Crab')">Purchase</button>
+      </div>
+
+      <div class="product" data-name="tuna">
+        <div class="fish">🐠</div>
+        <h3>Fresh Tuna</h3>
+        <p>Premium fresh tuna.</p>
+        <p class="price">৳ 1,000 / kg</p>
+        <button onclick="purchase('Fresh Tuna')">Purchase</button>
+      </div>
+
+    </div>
+    <p id="noResults" class="hidden">
+      No fish found. Please try another search.
+    </p>
+  </main>
+</div>
+
+<section id="about" class="hidden">
+  <h2>About Sea Fish Market</h2>
+  <p>
+    Sea Fish Market provides fresh seafood and quality fish
+    products to customers. Our goal is to offer excellent
+    seafood at competitive prices.
+  </p>
+</section>
+
+<section id="settings" class="hidden">
+  <h2>Settings</h2>
+  <label>Market phone number:</label><br><br>
+  <input id="phone" value="+8801XXXXXXXXX">
+  <br><br>
+  <button onclick="saveSettings()">Save Phone Number</button>
+  <p id="settingMessage"></p>
+</section>
+
+<section id="privacy" class="hidden">
+  <h2>Privacy Policy</h2>
+  <p>
+    Search terms may be stored to understand customer interests.
+    This demo saves search history in the current browser only.
+    Do not enter sensitive personal information.
+  </p>
+  <p>Customers should be informed about any analytics
+  and tracking used on the live website.</p>
+</section>
+
+<section id="analytics" class="hidden">
+  <h2>Customer Search Analytics</h2>
+  <p>Search terms recorded in this browser:</p>
+  <div id="searchHistory"></div>
+  <button onclick="clearHistory()">Clear Search History</button>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Phone: <a id="phoneLink" href="tel:+8801XXXXXXXXX">
+    +8801XXXXXXXXX</a></p>
+  <button onclick="sendSMS()">Send SMS</button>
+</section>
+
+<footer>
+  <h3>🐟 SEA FISH MARKET</h3>
+  <p>Fresh Seafood, Fresh Life!</p>
+  <p>© 2026 Sea Fish Market. All Rights Reserved.</p>
+</footer>
+
+<script>
+const sections = [
+  'home','products','about','settings',
+  'privacy','analytics'
+];
+
+function showSection(id) {
+  sections.forEach(section => {
+    document.getElementById(section).classList.add('hidden');
+  });
+  document.getElementById(id).classList.remove('hidden');
+
+  if(id === 'analytics') displayHistory();
+
+  window.scrollTo(0, 0);
+}
+
+// Search products and record search terms
+function searchFish() {
+  const input = document.getElementById('searchInput');
+  const term = input.value.trim().toLowerCase();
+
+  let found = 0;
+
+  document.querySelectorAll('.product').forEach(product => {
+    const match = product.dataset.name.includes(term);
+    product.style.display = match ? '' : 'none';
+    if(match) found++;
+  });
+
+  document.getElementById('noResults')
+    .classList.toggle('hidden', found > 0);
+
+  if(term.length >= 2) {
+    const history = JSON.parse(
+      localStorage.getItem('fishSearches') || '[]'
+    );
+
+    const last = history[history.length - 1];
+
+    // Avoid recording the same search repeatedly while typing
+    if(!last || last.term !== term) {
+      history.push({
+        term: term,
+        time: new Date().toLocaleString()
+      });
+      localStorage.setItem(
+        'fishSearches', JSON.stringify(history)
+      );
+    }
+  }
+}
+
+function displayHistory() {
+  const history = JSON.parse(
+    localStorage.getItem('fishSearches') || '[]'
+  );
+
+  const area = document.getElementById('searchHistory');
+
+  if(history.length === 0) {
+    area.innerHTML = '<p>No searches recorded yet.</p>';
+    return;
+  }
+
+  area.innerHTML = history.map(item =>
+    `<p>🔎 ${escapeHTML(item.term)} —
+    ${escapeHTML(item.time)}</p>`
+  ).join('');
+}
+
+function escapeHTML(value) {
+  return String(value).replace(/[&<>"']/g, char => ({
+    '&':'&amp;', '<':'&lt;', '>':'&gt;',
+    '"':'&quot;', "'":'&#39;'
+  })[char]);
+}
+
+function clearHistory() {
+  localStorage.removeItem('fishSearches');
+  displayHistory();
+}
+
+// Purchase contact
+function purchase(product) {
+  const number = getPhone();
+  const message = encodeURIComponent(
+    'Hello Sea Fish Market, I want to purchase ' + product
+  );
+  window.open(
+    'https://wa.me/' + number.replace(/\D/g,'') +
+    '?text=' + message, '_blank'
+  );
+}
+
+// SMS contact
+function sendSMS() {
+  const number = getPhone();
+  window.location.href = 'sms:' + number;
+}
+
+function getPhone() {
+  return localStorage.getItem('marketPhone') ||
+    document.getElementById('phone').value;
+}
+
+function saveSettings() {
+  const number = document.getElementById('phone').value.trim();
+  if(!number) return;
+
+  localStorage.setItem('marketPhone', number);
+
+  document.getElementById('phoneLink').textContent = number;
+  document.getElementById('phoneLink').href = 'tel:' + number;
+
+  document.getElementById('settingMessage').textContent =
+    'Phone number saved successfully!';
+}
+
+document.getElementById('phoneLink').textContent = getPhone();
+document.getElementById('phoneLink').href = 'tel:' + getPhone();
+document.getElementById('phone').value = getPhone();
+</script>
+
+</body>
+</html>
