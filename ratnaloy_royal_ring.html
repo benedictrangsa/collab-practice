@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>রত্নালয় (Ratnaloy) — খাঁটি ও ল্যাব-সার্টিফায়েড রত্ন পাথরের রাজকীয় আংটি</title>
+    
+    <!-- Google Fonts: Hind Siliguri & Noto Serif Bengali -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emeraldRoyal: '#0B3B2E',
+                        emeraldDark: '#07261E',
+                        emeraldDeep: '#06211A',
+                        goldAntique: '#C9A24D',
+                        goldSoft: '#E5C985',
+                        ivoryWarm: '#FAF7F2',
+                        borderGold: '#E8DFCE',
+                        charcoalDeep: '#1E2422',
+                        mutedGray: '#5A6562'
+                    },
+                    fontFamily: {
+                        sans: ['"Hind Siliguri"', 'sans-serif'],
+                        serif: ['"Noto Serif Bengali"', 'serif']
+                    },
+                    boxShadow: {
+                        'luxury': '0 10px 35px -5px rgba(11, 59, 46, 0.08), 0 4px 12px -2px rgba(201, 162, 77, 0.12)',
+                        'gold-glow': '0 0 25px rgba(201, 162, 77, 0.3)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Minimal Styles for Smooth Transitions & Scrollbar -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #FAF7F2;
+            color: #1E2422;
+            font-family: 'Hind Siliguri', sans-serif;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, .font-royal {
+            font-family: 'Noto Serif Bengali', serif;
+        }
+        .page-section {
+            display: none;
+            animation: fadeIn 0.35s ease-out forwards;
+        }
+        .page-section.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-float {
+            animation: floatSlow 4.5s ease-in-out infinite;
+        }
+        /* Custom subtle scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF7F2;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C9A24D;
+            border-radius: 999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0B3B2E;
+        }
+        /* Hide scrollbar on horizontal filter pills */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-ivoryWarm text-charcoalDeep antialiased selection:bg-goldAntique selection:text-white">
+
+    <!-- ==================== TOP ANNOUNCEMENT BAR ==================== -->
+    <div class="bg-emeraldDark text-goldSoft text-xs sm:text-sm py-2 px-4 text-center border-b border-goldAntique/20">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-3 gap-y-1 font-medium tracking-wide">
+            <span>১০০% ল্যাব-সার্টিফায়েড খাঁটি রত্ন পাথর</span>
+            <span class="hidden sm:inline text-goldAntique/60">|</span>
+            <span>সারা বাংলাদেশে ক্যাশ অন ডেলিভারি</span>
+            <span class="hidden md:inline text-goldAntique/60">|</span>
+            <span class="font-semibold text-white">ফ্রি কনসালটেশন: <a href="tel:+8801700000000" class="text-goldSoft hover:underline">+880 1700-000000</a></span>
+        </div>
+    </div>
+
+    <!-- ==================== MAIN STICKY HEADER ==================== -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-borderGold shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-18 sm:h-20 py-3">
+                
+                <!-- Brand Logo -->
+                <button onclick="navigateTo('home')" class="flex items-center gap-2.5 group focus:outline-none text-left">
+                    <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-emeraldRoyal flex items-center justify-center shadow-md border border-goldAntique/40 group-hover:scale-105 transition-transform">
+                        <!-- Custom SVG Gem Icon -->
+                        <svg class="w-6 h-6 text-goldSoft" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                            <path d="M6 3h12l4 6-10 12L2 9l4-6z" fill="url(#logoGoldGrad)" stroke="#E5C985"/>
+                            <path d="M2 9h20M12 21L8 9l4-6 4 6-4 12z" stroke="#0B3B2E" stroke-opacity="0.45"/>
+                            <defs>
+                                <linearGradient id="logoGoldGrad" x1="2" y1="3" x2="22" y2="21" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F5DF9D"/>
+                                    <stop offset="1" stop-color="#B88E38"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="block text-xl sm:text-2xl font-bold font-royal text-emeraldRoyal leading-none tracking-tight">রত্নালয়</span>
+                        <span class="block text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-goldAntique font-semibold mt-0.5">RATNALOY</span>
+                    </div>
+                </button>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="hidden lg:flex items-center gap-1 xl:gap-2" aria-label="Main Navigation">
+                    <button onclick="navigateTo('home')" data-nav="home" class="nav-link px-3.5 py-2 rounded-lg text-sm font-medium text-charcoalDeep hover:text-emeraldRoyal hover:bg-ivoryWarm transition-colors">হোম</button>
+                    <button onclick="navigateTo('shop')" data-nav="shop" class="nav-link px-3.5 py-2 rounded-lg text-sm font-medium text-charcoalDeep hover:text-emeraldRoyal hover:bg-ivoryWarm transition-colors">রত্ন কালেকশন</button>
+                    <button onclick="navigateTo('zodiac')" data-nav="zodiac" class="nav-link px-3.5 py-2 rounded-lg text-sm font-medium text-charcoalDeep hover:text-emeraldRoyal hover:bg-ivoryWarm transition-colors">রাশি ও গাইড</button>
+                    <button onclick="navigateTo('ringsize')" data-nav="ringsize" class="nav-link px-3.5 py-2 rounded-lg text-sm font-medium text-charcoalDeep hover:text-emeraldRoyal hover:bg-ivoryWarm transition-colors">আংটির মাপ</button>
+                    <button onclick="navigateTo('about')" data-nav="about" class="nav-link px-3.5 py-2 rounded-lg text-sm font-medium text-charcoalDeep hover:text-emeraldRoyal hover:bg-ivoryWarm transition-colors">আমাদের সম্পর্কে</button>
+                    <button onclick="navigateTo('contact')" data-nav="contact" class="nav-link px-3.5 py-2 rounded-lg text-sm font-medium text-charcoalDeep hover:text-emeraldRoyal hover:bg-ivoryWarm transition-colors">যোগাযোগ</button>
+                </nav>
+
+                <!-- Header Right Actions -->
+                <div class="flex items-center gap-2 sm:gap-3">
+                    <!-- Search Toggle -->
+                    <button onclick="toggleSearchBar()" aria-label="অনুসন্ধান" class="p-2.5 rounded-xl text-emeraldRoyal hover:bg-ivoryWarm border border-transparent hover:border-borderGold transition-all">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="7"></circle>
+                            <path stroke-linecap="round" d="M20 20l-3.5-3.5"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Cart Button with Live Badge -->
+                    <button onclick="toggleCart(true)" aria-label="শপিং কার্ট" class="relative p-2.5 rounded-xl text-emeraldRoyal hover:bg-ivoryWarm border border-transparent hover:border-borderGold transition-all">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h15l-1.5 9h-12z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6L5 3H2"></path>
+                            <circle cx="9" cy="20" r="1.5"></circle>
+                            <circle cx="18" cy="20" r="1.5"></circle>
+                        </svg>
+                        <span id="cart-badge" class="absolute -top-1 -right-1 min-w-[20px] h-5 px-1 rounded-full bg-goldAntique text-white text-[11px] font-bold flex items-center justify-center shadow-sm">০</span>
+                    </button>
+
+                    <!-- Free Consultation Gold CTA (Desktop) -->
+                    <button onclick="navigateTo('contact')" class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-goldAntique to-[#b68d39] text-white text-sm font-semibold shadow-sm hover:shadow-md hover:brightness-105 transition-all">
+                        <span>ফ্রি পরামর্শ</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Mobile Menu Hamburger -->
+                    <button onclick="toggleMobileMenu()" aria-label="মেনু" class="lg:hidden p-2.5 rounded-xl text-emeraldRoyal bg-ivoryWarm border border-borderGold">
+                        <svg id="hamburger-icon" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Collapsible Search Bar -->
+            <div id="header-search-bar" class="hidden pb-4 pt-1 border-t border-borderGold/60">
+                <div class="relative max-w-2xl mx-auto">
+                    <input type="text" id="global-search-input" oninput="handleGlobalSearch(this.value)" placeholder="রত্ন পাথরের নাম লিখুন (যেমন: নীলা, পান্না, রুবি, পোখরাজ)..." class="w-full pl-11 pr-24 py-2.5 rounded-xl bg-ivoryWarm border border-borderGold text-sm focus:outline-none focus:border-goldAntique focus:ring-2 focus:ring-goldAntique/20">
+                    <svg class="w-5 h-5 text-mutedGray absolute left-3.5 top-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path stroke-linecap="round" d="M20 20l-3.5-3.5"></path>
+                    </svg>
+                    <button onclick="toggleSearchBar()" class="absolute right-2 top-1.5 px-3 py-1.5 text-xs font-medium text-mutedGray hover:text-emeraldRoyal rounded-lg">বন্ধ করুন</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-borderGold shadow-lg">
+            <div class="px-4 py-3 space-y-1">
+                <button onclick="navigateTo('home'); toggleMobileMenu(false)" data-nav-mobile="home" class="mobile-nav-link w-full text-left px-4 py-2.5 rounded-xl text-base font-medium text-charcoalDeep hover:bg-ivoryWarm">হোম</button>
+                <button onclick="navigateTo('shop'); toggleMobileMenu(false)" data-nav-mobile="shop" class="mobile-nav-link w-full text-left px-4 py-2.5 rounded-xl text-base font-medium text-charcoalDeep hover:bg-ivoryWarm">রত্ন কালেকশন</button>
+                <button onclick="navigateTo('zodiac'); toggleMobileMenu(false)" data-nav-mobile="zodiac" class="mobile-nav-link w-full text-left px-4 py-2.5 rounded-xl text-base font-medium text-charcoalDeep hover:bg-ivoryWarm">রাশি ও গাইড</button>
+                <button onclick="navigateTo('ringsize'); toggleMobileMenu(false)" data-nav-mobile="ringsize" class="mobile-nav-link w-full text-left px-4 py-2.5 rounded-xl text-base font-medium text-charcoalDeep hover:bg-ivoryWarm">আংটির মাপ</button>
+                <button onclick="navigateTo('about'); toggleMobileMenu(false)" data-nav-mobile="about" class="mobile-nav-link w-full text-left px-4 py-2.5 rounded-xl text-base font-medium text-charcoalDeep hover:bg-ivoryWarm">আমাদের সম্পর্কে</button>
+                <button onclick="navigateTo('contact'); toggleMobileMenu(false)" data-nav-mobile="contact" class="mobile-nav-link w-full text-left px-4 py-2.5 rounded-xl text-base font-medium text-charcoalDeep hover:bg-ivoryWarm">যোগাযোগ</button>
+                <div class="pt-2 pb-1">
+                    <button onclick="navigateTo('contact'); toggleMobileMenu(false)" class="w-full py-3 rounded-xl bg-gradient-to-r from-goldAntique to-[#b68d39] text-white font-semibold shadow-sm">ফ্রি রত্ন পরামর্শ নিন</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT AREA ==================== -->
+    <main class="min-h-[70vh]">
+
+        <!-- ======================================================= -->
+        <!-- PAGE 1: হোম (HOME) -->
+        <!-- ======================================================= -->
+        <section id="page-home" class="page-section active">
+            <!-- Royal Hero Section -->
+            <div class="relative overflow-hidden bg-gradient-to-br from-emeraldRoyal via-[#082D23] to-emeraldDeep text-white">
+                <!-- Subtle Gold Decorative Pattern -->
+                <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#E5C985 1px, transparent 1px); background-size: 28px 28px;"></div>
+                <div class="absolute -top-24 -right-24 w-96 h-96 bg-goldAntique/15 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-emerald-400/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 lg:py-24 relative z-10">
+                    <div class="grid lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+                        <!-- Hero Text -->
+                        <div class="lg:col-span-7 text-center lg:text-left">
+                            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-goldSoft/30 text-goldSoft text-xs sm:text-sm font-medium mb-6">
+                                <span class="w-2 h-2 rounded-full bg-goldSoft animate-pulse"></span>
+                                <span>বাংলাদেশের বিশ্বস্ত ল্যাব-সার্টিফায়েড রত্নালয়</span>
+                            </div>
+                            <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-[54px] font-bold leading-tight font-royal text-white mb-5">
+                                খাঁটি ও ল্যাব-সার্টিফায়েড <span class="text-goldSoft">রত্ন পাথরের</span> রাজকীয় আংটি
+                            </h1>
+                            <p class="text-base sm:text-lg text-emerald-100/85 max-w-2xl mx-auto lg:mx-0 leading-relaxed mb-8">
+                                শ্রীলঙ্কা, বার্মা, জাম্বিয়া ও ইতালি থেকে সরাসরি সংগৃহীত ১০০% প্রাকৃতিক ও আনহিটেড রত্ন পাথর। দক্ষ কারিগরের হাতে তৈরি ৯২৫ খাঁটি চাঁদি ও অষ্টধাতুর আংটি—সাথে আন্তর্জাতিক মানের ল্যাব টেস্ট রিপোর্ট।
+                            </p>
+                            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                                <button onclick="navigateTo('shop')" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-gradient-to-r from-goldAntique to-[#b68d39] text-white font-semibold text-base shadow-gold-glow hover:brightness-110 transition-all flex items-center justify-center gap-2">
+                                    <span>কালেকশন দেখুন</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                </button>
+                                <button onclick="navigateTo('zodiac')" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 border border-goldSoft/40 text-goldSoft font-semibold text-base backdrop-blur-sm transition-all flex items-center justify-center gap-2">
+                                    <span>রাশি অনুযায়ী রত্ন খুঁজুন</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Hero Decorative Gemstone Ring SVG Illustration -->
+                        <div class="lg:col-span-5 flex justify-center">
+                            <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 flex items-center justify-center">
+                                <!-- Glowing Backdrop Rings -->
+                                <div class="absolute inset-4 rounded-full border border-goldSoft/20 animate-spin" style="animation-duration: 30s;"></div>
+                                <div class="absolute inset-10 rounded-full border border-dashed border-goldAntique/30"></div>
+                                <div class="absolute inset-14 rounded-full bg-goldAntique/15 blur-2xl"></div>
+                                
+                                <!-- Luxury SVG Ring Illustration -->
+                                <svg class="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 animate-float drop-shadow-2xl" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="heroBand" x1="50" y1="90" x2="210" y2="230" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0%" stop-color="#FFF2C2"/>
+                                            <stop offset="35%" stop-color="#D4AF37"/>
+                                            <stop offset="70%" stop-color="#9A7221"/>
+                                            <stop offset="100%" stop-color="#F5DF9D"/>
+                                        </linearGradient>
+                                        <linearGradient id="heroBandInner" x1="70" y1="110" x2="190" y2="210" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0%" stop-color="#6B4E12"/>
+                                            <stop offset="50%" stop-color="#C9A24D"/>
+                                            <stop offset="100%" stop-color="#533B0A"/>
+                                        </linearGradient>
+                                        <radialGradient id="heroEmerald" cx="42%" cy="35%" r="65%">
+                                            <stop offset="0%" stop-color="#6EE7B7"/>
+                                            <stop offset="30%" stop-color="#10B981"/>
+                                            <stop offset="70%" stop-color="#047857"/>
+                                            <stop offset="100%" stop-color="#022C22"/>
+                                        </radialGradient>
+                                    </defs>
+                                    <!-- Ring Shank -->
+                                    <ellipse cx="130" cy="162" rx="68" ry="62" stroke="url(#heroBand)" stroke-width="18"/>
+                                    <ellipse cx="130" cy="162" rx="59" ry="53" stroke="url(#heroBandInner)" stroke-width="3" opacity="0.7"/>
+                                    <!-- Crown Base / Bezel -->
+                                    <ellipse cx="130" cy="96" rx="46" ry="20" fill="url(#heroBand)"/>
+                                    <!-- Emerald Cut Gemstone -->
+                                    <polygon points="94,48 166,48 180,64 180,104 166,120 94,120 80,104 80,64" fill="url(#heroEmerald)" stroke="#E5C985" stroke-width="3"/>
+                                    <!-- Facet Lines -->
+                                    <polygon points="104,60 156,60 165,70 165,98 156,108 104,108 95,98 95,70" fill="#34D399" fill-opacity="0.22" stroke="#A7F3D0" stroke-width="1.2" stroke-opacity="0.6"/>
+                                    <line x1="94" y1="48" x2="104" y2="60" stroke="#A7F3D0" stroke-opacity="0.6"/>
+                                    <line x1="166" y1="48" x2="156" y2="60" stroke="#A7F3D0" stroke-opacity="0.6"/>
+                                    <line x1="180" y1="64" x2="165" y2="70" stroke="#A7F3D0" stroke-opacity="0.6"/>
+                                    <line x1="180" y1="104" x2="165" y2="98" stroke="#A7F3D0" stroke-opacity="0.6"/>
+                                    <line x1="166" y1="120" x2="156" y2="108" stroke="#A7F3D0" stroke-opacity="0.6"/>
+                                    <line x1="94" y1="120" x2="104" y2="108" stroke="#A7F3D0" stroke-opacity="0.6"/>
+                                    <line x1="80" y1="104" x2="95" y2="98" stroke="#A7F3D0" stroke-opacity="0.6"/>
+                                    <line x1="80" y1="64" x2="95" y2="70" stroke="#A7F3D0" stroke-opacity="0.6"/>
+                                    <!-- Gold Prongs -->
+                                    <circle cx="94" cy="52" r="5.5" fill="#F5DF9D" stroke="#855E17" stroke-width="1.5"/>
+                                    <circle cx="166" cy="52" r="5.5" fill="#F5DF9D" stroke="#855E17" stroke-width="1.5"/>
+                                    <circle cx="94" cy="116" r="5.5" fill="#F5DF9D" stroke="#855E17" stroke-width="1.5"/>
+                                    <circle cx="166" cy="116" r="5.5" fill="#F5DF9D" stroke="#855E17" stroke-width="1.5"/>
+                                    <!-- Specular Sparkle -->
+                                    <path d="M110 66L113 73L120 76L113 79L110 86L107 79L100 76L107 73L110 66Z" fill="#FFFFFF" opacity="0.9"/>
+                                    <path d="M172 34L174 39L179 41L174 43L172 48L170 43L165 41L170 39L172 34Z" fill="#F5DF9D" opacity="0.85"/>
+                                </svg>
+
+                                <!-- Floating Certified Pill -->
+                                <div class="absolute bottom-2 right-0 sm:right-2 bg-white/95 text-emeraldRoyal px-4 py-2 rounded-2xl shadow-lg border border-goldAntique/40 flex items-center gap-2.5">
+                                    <div class="w-8 h-8 rounded-full bg-emeraldRoyal text-goldSoft flex items-center justify-center font-bold text-xs">✓</div>
+                                    <div class="text-left">
+                                        <p class="text-xs font-bold leading-tight">ল্যাব সার্টিফায়েড</p>
+                                        <p class="text-[11px] text-mutedGray">১০০% আসল গ্যারান্টি</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 Trust Badges Strip -->
+            <div class="bg-white border-b border-borderGold">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+                        <div class="flex items-center gap-3.5 p-3.5 rounded-2xl bg-ivoryWarm/70 border border-borderGold/70">
+                            <div class="w-12 h-12 shrink-0 rounded-xl bg-emeraldRoyal/10 text-emeraldRoyal flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-sm sm:text-base font-bold text-charcoalDeep">১০০% প্রাকৃতিক রত্ন</h3>
+                                <p class="text-xs text-mutedGray">কোনো কৃত্রিম রঙ বা তাপ নয়</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3.5 p-3.5 rounded-2xl bg-ivoryWarm/70 border border-borderGold/70">
+                            <div class="w-12 h-12 shrink-0 rounded-xl bg-emeraldRoyal/10 text-emeraldRoyal flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-sm sm:text-base font-bold text-charcoalDeep">ল্যাব সার্টিফিকেট</h3>
+                                <p class="text-xs text-mutedGray">প্রতিটি রত্নের সাথে টেস্ট রিপোর্ট</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3.5 p-3.5 rounded-2xl bg-ivoryWarm/70 border border-borderGold/70">
+                            <div class="w-12 h-12 shrink-0 rounded-xl bg-emeraldRoyal/10 text-emeraldRoyal flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="13" r="7"></circle><path d="M9 6l3-3 3 3"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-sm sm:text-base font-bold text-charcoalDeep">খাঁটি চাঁদি ও অষ্টধাতু</h3>
+                                <p class="text-xs text-mutedGray">৯২৫ স্টার্লিং সিলভার ফিটিং</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3.5 p-3.5 rounded-2xl bg-ivoryWarm/70 border border-borderGold/70">
+                            <div class="w-12 h-12 shrink-0 rounded-xl bg-emeraldRoyal/10 text-emeraldRoyal flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-sm sm:text-base font-bold text-charcoalDeep">৭ দিনের রিপ্লেসমেন্ট</h3>
+                                <p class="text-xs text-mutedGray">সহজ পরিবর্তন ও রিটার্ন সুবিধা</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Gemstones Section -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-18">
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-goldAntique">সেরা নির্বাচন</span>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-emeraldRoyal mt-1">জনপ্রিয় রত্ন পাথরের আংটি</h2>
+                    </div>
+                    <button onclick="navigateTo('shop')" class="inline-flex items-center gap-1.5 text-sm font-semibold text-emeraldRoyal hover:text-goldAntique transition-colors">
+                        <span>সব কালেকশন দেখুন</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </div>
+
+                <!-- Featured 4 Products Grid -->
+                <div id="featured-products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Rendered via JS -->
+                </div>
+            </div>
+
+            <!-- Zodiac Teaser Banner -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-14">
+                <div class="rounded-3xl bg-emeraldRoyal text-white p-8 sm:p-12 relative overflow-hidden border border-goldAntique/30 shadow-luxury">
+                    <div class="absolute right-0 top-0 w-64 h-64 bg-goldAntique/15 rounded-full blur-3xl pointer-events-none"></div>
+                    <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-6 text-center lg:text-left">
+                        <div class="max-w-2xl">
+                            <span class="inline-block px-3 py-1 rounded-full bg-goldAntique/20 text-goldSoft text-xs font-semibold mb-3">বিনামূল্যে রত্ন গাইড</span>
+                            <h2 class="text-2xl sm:text-3xl font-bold font-royal mb-2">আপনার রাশি অনুযায়ী কোন রত্ন পাথরটি সেরা?</h2>
+                            <p class="text-emerald-100/80 text-sm sm:text-base">আমাদের ইন্টারেক্টিভ রাশি গাইড থেকে জেনে নিন আপনার জন্মরাশির শুভ রত্ন, কোন আঙুলে পরবেন এবং কোন ধাতুতে বাঁধানো উত্তম।</p>
+                        </div>
+                        <button onclick="navigateTo('zodiac')" class="shrink-0 px-7 py-3.5 rounded-xl bg-goldAntique hover:bg-[#b88f3d] text-white font-semibold shadow-md transition-all">রাশি গাইড দেখুন</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customer Testimonials -->
+            <div class="bg-white border-t border-borderGold py-14 sm:py-16">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-2xl mx-auto mb-10">
+                        <span class="text-xs font-bold uppercase tracking-widest text-goldAntique">গ্রাহকদের মতামত</span>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-emeraldRoyal mt-1">আমাদের সন্তুষ্ট গ্রাহকদের অভিজ্ঞতা</h2>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="p-6 rounded-2xl bg-ivoryWarm border border-borderGold">
+                            <div class="flex text-goldAntique mb-3 text-lg">★★★★★</div>
+                            <p class="text-sm text-charcoalDeep leading-relaxed mb-4">“রত্নালয় থেকে একটি শ্রীলঙ্কান ইন্দ্রনীলা আংটি নিয়েছিলাম। সাথে অরিজিনাল ল্যাব সার্টিফিকেট পেয়েছি এবং চাঁদির ফিনিশিং ছিল অসাধারণ। ডেলিভারিও খুব দ্রুত হয়েছে।”</p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-emeraldRoyal text-goldSoft flex items-center justify-center font-bold">তা</div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-emeraldRoyal">তানভীর আহমেদ</h4>
+                                    <p class="text-xs text-mutedGray">ধানমন্ডি, ঢাকা</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-ivoryWarm border border-borderGold">
+                            <div class="flex text-goldAntique mb-3 text-lg">★★★★★</div>
+                            <p class="text-sm text-charcoalDeep leading-relaxed mb-4">“অনলাইনে রত্ন পাথর কিনতে প্রথমে একটু দ্বিধা ছিল, কিন্তু ওনাদের ফ্রি কনসালটেশন আর ল্যাব রিপোর্ট দেখে নিশ্চিন্ত হয়েছি। আমার জাম্বিয়ান পান্না আংটিটি একদম মনের মতো হয়েছে।”</p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-emeraldRoyal text-goldSoft flex items-center justify-center font-bold">নু</div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-emeraldRoyal">নুসরাত জাহান</h4>
+                                    <p class="text-xs text-mutedGray">চট্টগ্রাম</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-ivoryWarm border border-borderGold">
+                            <div class="flex text-goldAntique mb-3 text-lg">★★★★★</div>
+                            <p class="text-sm text-charcoalDeep leading-relaxed mb-4">“বাবার জন্য ইতালিয়ান রক্ত প্রবাল অষ্টধাতুতে বাঁধিয়ে অর্ডার করেছিলাম। ওনাদের আংটির মাপ গাইড ব্যবহার করে সাইজ দিয়েছিলাম, একদম পারফেক্ট ফিট হয়েছে।”</p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-emeraldRoyal text-goldSoft flex items-center justify-center font-bold">রা</div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-emeraldRoyal">রাশেদুল ইসলাম</h4>
+                                    <p class="text-xs text-mutedGray">সিলেট</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- PAGE 2: রত্ন কালেকশন (SHOP) -->
+        <!-- ======================================================= -->
+        <section id="page-shop" class="page-section">
+            <!-- Page Header Banner -->
+            <div class="bg-emeraldRoyal text-white py-10 sm:py-12 border-b border-goldAntique/30">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-goldSoft">রত্নালয় বুটিক</span>
+                    <h1 class="text-3xl sm:text-4xl font-bold font-royal mt-1">রত্ন পাথরের আংটির কালেকশন</h1>
+                    <p class="text-emerald-100/80 text-sm sm:text-base mt-2 max-w-xl mx-auto">প্রতিটি রত্ন ১০০% প্রাকৃতিক, ল্যাব-টেস্টেড এবং আপনার আঙুলের মাপ অনুযায়ী কাস্টমাইজযোগ্য।</p>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+                <!-- Filter & Sort Controls -->
+                <div class="bg-white rounded-2xl border border-borderGold p-4 mb-8 shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                    <!-- Category Pills -->
+                    <div id="category-filters" class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 lg:pb-0">
+                        <!-- Rendered via JS -->
+                    </div>
+
+                    <!-- Sort Dropdown -->
+                    <div class="flex items-center gap-2 shrink-0">
+                        <label for="sort-select" class="text-xs sm:text-sm font-medium text-mutedGray">সাজান:</label>
+                        <select id="sort-select" onchange="renderShopProducts()" class="px-3.5 py-2 rounded-xl bg-ivoryWarm border border-borderGold text-sm font-medium text-charcoalDeep focus:outline-none focus:border-goldAntique">
+                            <option value="default">জনপ্রিয়তা অনুযায়ী</option>
+                            <option value="price-asc">কম দাম থেকে বেশি</option>
+                            <option value="price-desc">বেশি দাম থেকে কম</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Active Search Indicator -->
+                <div id="shop-search-indicator" class="hidden mb-6 flex items-center justify-between bg-goldSoft/20 border border-goldAntique/40 px-4 py-2.5 rounded-xl text-sm">
+                    <span>অনুসন্ধানের ফলাফল: <strong id="shop-search-term" class="text-emeraldRoyal"></strong></span>
+                    <button onclick="clearSearch()" class="text-xs font-semibold text-emeraldRoyal underline">মুছে ফেলুন</button>
+                </div>
+
+                <!-- Products Grid -->
+                <div id="shop-products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Rendered via JS -->
+                </div>
+
+                <!-- Empty State -->
+                <div id="shop-empty-state" class="hidden text-center py-16 bg-white rounded-2xl border border-borderGold">
+                    <p class="text-lg font-bold text-emeraldRoyal mb-2">দুঃখিত, কোনো রত্ন পাওয়া যায়নি!</p>
+                    <p class="text-sm text-mutedGray mb-4">অন্য ক্যাটাগরি নির্বাচন করুন বা সব কালেকশন দেখুন।</p>
+                    <button onclick="selectCategory('সব'); clearSearch();" class="px-5 py-2.5 rounded-xl bg-emeraldRoyal text-white text-sm font-semibold">সব রত্ন দেখুন</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- PAGE 3: রাশি ও গাইড (ZODIAC & STONE GUIDE) -->
+        <!-- ======================================================= -->
+        <section id="page-zodiac" class="page-section">
+            <div class="bg-emeraldRoyal text-white py-10 sm:py-12 border-b border-goldAntique/30">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-goldSoft">জ্যোতিষ ও রত্ন পরামর্শ</span>
+                    <h1 class="text-3xl sm:text-4xl font-bold font-royal mt-1">রাশি ও রত্ন পাথর গাইড</h1>
+                    <p class="text-emerald-100/80 text-sm sm:text-base mt-2 max-w-2xl mx-auto">নিচের ১২টি রাশি থেকে আপনার রাশিটি নির্বাচন করুন এবং জেনে নিন আপনার জন্য উপযোগী রত্ন, আঙুল ও ধাতু।</p>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+                <!-- 12 Zodiac Grid -->
+                <div id="zodiac-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4 mb-10">
+                    <!-- Rendered via JS -->
+                </div>
+
+                <!-- Selected Zodiac Detail Card -->
+                <div id="zodiac-detail-card" class="bg-white rounded-3xl border border-borderGold shadow-luxury p-6 sm:p-10">
+                    <!-- Rendered via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- PAGE 4: আংটির মাপ (RING SIZE GUIDE) -->
+        <!-- ======================================================= -->
+        <section id="page-ringsize" class="page-section">
+            <div class="bg-emeraldRoyal text-white py-10 sm:py-12 border-b border-goldAntique/30">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-goldSoft">নিখুঁত ফিট নিশ্চিত করুন</span>
+                    <h1 class="text-3xl sm:text-4xl font-bold font-royal mt-1">আংটির মাপ নেওয়ার গাইড</h1>
+                    <p class="text-emerald-100/80 text-sm sm:text-base mt-2 max-w-2xl mx-auto">ঘরে বসেই মাত্র ২ মিনিটে সুতা বা কাগজের সাহায্যে আপনার আঙুলের সঠিক মাপ বের করুন।</p>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+                <div class="grid lg:grid-cols-12 gap-8 items-start">
+                    <!-- Left: Step-by-Step Guide -->
+                    <div class="lg:col-span-7 space-y-5">
+                        <h2 class="text-2xl font-bold text-emeraldRoyal font-royal mb-4">সুতা বা কাগজ দিয়ে মাপার ৪টি সহজ ধাপ</h2>
+                        
+                        <div class="bg-white p-5 rounded-2xl border border-borderGold flex gap-4">
+                            <div class="w-10 h-10 shrink-0 rounded-xl bg-emeraldRoyal text-goldSoft font-bold flex items-center justify-center">১</div>
+                            <div>
+                                <h3 class="font-bold text-charcoalDeep text-base mb-1">চিকন কাগজ বা সুতা নিন</h3>
+                                <p class="text-sm text-mutedGray">একটি শক্ত সুতা বা ১ সেমি চওড়া ও ১০ সেমি লম্বা কাগজের টুকরো কেটে নিন।</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl border border-borderGold flex gap-4">
+                            <div class="w-10 h-10 shrink-0 rounded-xl bg-emeraldRoyal text-goldSoft font-bold flex items-center justify-center">২</div>
+                            <div>
+                                <h3 class="font-bold text-charcoalDeep text-base mb-1">আঙুলের গোড়ায় পেঁচিয়ে নিন</h3>
+                                <p class="text-sm text-mutedGray">যে আঙুলে আংটি পরবেন, তার গোড়ায় কাগজ বা সুতাটি আরামদায়কভাবে (বেশি টাইট বা ঢিলা নয়) পেঁচান।</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl border border-borderGold flex gap-4">
+                            <div class="w-10 h-10 shrink-0 rounded-xl bg-emeraldRoyal text-goldSoft font-bold flex items-center justify-center">৩</div>
+                            <div>
+                                <h3 class="font-bold text-charcoalDeep text-base mb-1">কলম দিয়ে দাগ দিন</h3>
+                                <p class="text-sm text-mutedGray">সুতা বা কাগজের দুই প্রান্ত যেখানে এসে মিলিত হয়েছে, সেখানে কলম দিয়ে স্পষ্ট একটি দাগ দিন।</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl border border-borderGold flex gap-4">
+                            <div class="w-10 h-10 shrink-0 rounded-xl bg-emeraldRoyal text-goldSoft font-bold flex items-center justify-center">৪</div>
+                            <div>
+                                <h3 class="font-bold text-charcoalDeep text-base mb-1">স্কেলে মিলিমিটার (mm) মাপুন</h3>
+                                <p class="text-sm text-mutedGray">এবার সাধারণ স্কেলে দাগ পর্যন্ত দৈর্ঘ্য মিলিমিটারে (যেমন: ৫৮ মিমি বা ৬০ মিমি) মেপে পাশের ক্যালকুলেটরে বসিয়ে দিন।</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Interactive Calculator -->
+                    <div class="lg:col-span-5">
+                        <div class="bg-white rounded-3xl border-2 border-goldAntique/40 p-6 sm:p-8 shadow-luxury">
+                            <span class="inline-block px-3 py-1 rounded-full bg-emeraldRoyal/10 text-emeraldRoyal text-xs font-bold mb-3">ইন্টারেক্টিভ টুল</span>
+                            <h2 class="text-2xl font-bold text-emeraldRoyal font-royal mb-2">আংটির সাইজ ক্যালকুলেটর</h2>
+                            <p class="text-sm text-mutedGray mb-6">আপনার আঙুলের পরিধি মিলিমিটারে (mm) লিখুন (সাধারণত ৪৮ মিমি থেকে ৭০ মিমি):</p>
+
+                            <div class="space-y-4">
+                                <div>
+                                    <label for="mm-input" class="block text-sm font-semibold text-charcoalDeep mb-1.5">আঙুলের পরিধি (মিলিমিটার / mm)</label>
+                                    <div class="flex gap-2">
+                                        <input type="number" id="mm-input" min="44" max="74" step="0.5" placeholder="যেমন: 58" oninput="calculateRingSize()" class="w-full px-4 py-3 rounded-xl bg-ivoryWarm border border-borderGold text-base font-semibold focus:outline-none focus:border-goldAntique">
+                                        <button onclick="calculateRingSize()" class="px-5 py-3 rounded-xl bg-emeraldRoyal text-white font-semibold text-sm hover:bg-emeraldDark transition-colors shrink-0">হিসাব করুন</button>
+                                    </div>
+                                </div>
+
+                                <!-- Quick Presets -->
+                                <div class="flex flex-wrap gap-2 pt-1">
+                                    <span class="text-xs text-mutedGray self-center">দ্রুত পরীক্ষা:</span>
+                                    <button onclick="setMM(54)" class="px-2.5 py-1 text-xs rounded-lg bg-ivoryWarm border border-borderGold hover:border-goldAntique">54 mm</button>
+                                    <button onclick="setMM(58)" class="px-2.5 py-1 text-xs rounded-lg bg-ivoryWarm border border-borderGold hover:border-goldAntique">58 mm</button>
+                                    <button onclick="setMM(62)" class="px-2.5 py-1 text-xs rounded-lg bg-ivoryWarm border border-borderGold hover:border-goldAntique">62 mm</button>
+                                    <button onclick="setMM(65)" class="px-2.5 py-1 text-xs rounded-lg bg-ivoryWarm border border-borderGold hover:border-goldAntique">65 mm</button>
+                                </div>
+
+                                <!-- Result Box -->
+                                <div id="ring-size-result" class="mt-4 p-5 rounded-2xl bg-emeraldRoyal text-white text-center">
+                                    <p class="text-xs text-goldSoft uppercase tracking-wider mb-1">আপনার বাংলাদেশি / ইন্ডিয়ান আংটির সাইজ</p>
+                                    <div id="result-size-number" class="text-4xl font-bold font-royal text-goldSoft my-1">১৮</div>
+                                    <p id="result-size-note" class="text-xs text-emerald-100/80">পরিধি ৫৮ মিমি (ভেতরের ব্যাস ১৮.৫ মিমি)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reference Chart Table -->
+                <div class="mt-12 bg-white rounded-3xl border border-borderGold p-6 sm:p-8 shadow-sm">
+                    <h3 class="text-xl font-bold text-emeraldRoyal font-royal mb-4">আংটির মাপের রেফারেন্স চার্ট (বাংলাদেশ স্ট্যান্ডার্ড)</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse text-sm">
+                            <thead>
+                                <tr class="bg-ivoryWarm text-emeraldRoyal border-b border-borderGold">
+                                    <th class="py-3 px-4 font-bold rounded-tl-xl">বাংলাদেশ / ইন্ডিয়ান সাইজ</th>
+                                    <th class="py-3 px-4 font-bold">আঙুলের পরিধি (mm)</th>
+                                    <th class="py-3 px-4 font-bold">ভেতরের ব্যাস (mm)</th>
+                                    <th class="py-3 px-4 font-bold rounded-tr-xl">সাধারণ ব্যবহারকারী</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-borderGold/60">
+                                <tr><td class="py-3 px-4 font-semibold">১৬</td><td class="py-3 px-4">৫৬.০ মিমি</td><td class="py-3 px-4">১৭.৮ মিমি</td><td class="py-3 px-4 text-mutedGray">চিকন আঙুল / নারী</td></tr>
+                                <tr><td class="py-3 px-4 font-semibold">১৮</td><td class="py-3 px-4">৫৮.০ মিমি</td><td class="py-3 px-4">১৮.৫ মিমি</td><td class="py-3 px-4 text-mutedGray">মাঝারি আঙুল (নারী/পুরুষ)</td></tr>
+                                <tr><td class="py-3 px-4 font-semibold">২০</td><td class="py-3 px-4">৬০.০ মিমি</td><td class="py-3 px-4">১৯.১ মিমি</td><td class="py-3 px-4 text-mutedGray">পুরুষদের স্ট্যান্ডার্ড সাইজ</td></tr>
+                                <tr><td class="py-3 px-4 font-semibold">২২</td><td class="py-3 px-4">৬২.২ মিমি</td><td class="py-3 px-4">১৯.৮ মিমি</td><td class="py-3 px-4 text-mutedGray">পুরুষদের বড় সাইজ</td></tr>
+                                <tr><td class="py-3 px-4 font-semibold">২৪</td><td class="py-3 px-4">৬৪.৫ মিমি</td><td class="py-3 px-4">২০.৫ মিমি</td><td class="py-3 px-4 text-mutedGray">অতিরিক্ত বড় আঙুল</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- PAGE 5: আমাদের সম্পর্কে (ABOUT & LAB CERTIFICATION) -->
+        <!-- ======================================================= -->
+        <section id="page-about" class="page-section">
+            <div class="bg-emeraldRoyal text-white py-10 sm:py-12 border-b border-goldAntique/30">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-goldSoft">আমাদের ঐতিহ্য ও সততা</span>
+                    <h1 class="text-3xl sm:text-4xl font-bold font-royal mt-1">রত্নালয় সম্পর্কে ও ল্যাব সার্টিফিকেশন</h1>
+                    <p class="text-emerald-100/80 text-sm sm:text-base mt-2 max-w-2xl mx-auto">খাঁটি রত্ন পাথরের নিশ্চয়তা এবং শতভাগ স্বচ্ছতার প্রতিশ্রুতি নিয়ে আমাদের পথচলা।</p>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-14">
+                <!-- Brand Story & Visual Lab Certificate -->
+                <div class="grid lg:grid-cols-12 gap-10 items-center">
+                    <div class="lg:col-span-6 space-y-4">
+                        <span class="text-xs font-bold uppercase tracking-widest text-goldAntique">আমাদের গল্প</span>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-emeraldRoyal font-royal">কেন রত্নালয় বাংলাদেশের সবচেয়ে বিশ্বস্ত রত্ন প্রতিষ্ঠান?</h2>
+                        <p class="text-sm sm:text-base text-mutedGray leading-relaxed">
+                            বর্তমান বাজারে নকল ও কৃত্রিমভাবে রঙ করা পাথরের ভিড়ে আসল প্রাকৃতিক রত্ন চেনা সাধারণ মানুষের জন্য অত্যন্ত কঠিন। এই সমস্যা দূর করতেই <strong>রত্নালয় (Ratnaloy)</strong>-এর যাত্রা। আমরা সরাসরি শ্রীলঙ্কা, বার্মা, জাম্বিয়া, ইতালি ও অস্ট্রেলিয়ার খনি ও অনুমোদিত ডিলারদের কাছ থেকে আনহিটেড (Unheated) ও আনট্রিটেড প্রাকৃতিক রত্ন সংগ্রহ করি।
+                        </p>
+                        <p class="text-sm sm:text-base text-mutedGray leading-relaxed">
+                            আমাদের প্রতিটি রত্ন পাথর অনুমোদিত জেমোলজিক্যাল ল্যাবরেটরিতে পরীক্ষা করে গ্রাহকের হাতে তুলে দেওয়া হয়। আমাদের কোনো রত্ন নকল প্রমাণিত হলে আমরা শতভাগ মূল্য ফেরত (১০০% মানি-ব্যাক) গ্যারান্টি প্রদান করি।
+                        </p>
+                        <div class="grid grid-cols-3 gap-4 pt-3">
+                            <div class="p-4 rounded-2xl bg-white border border-borderGold text-center">
+                                <p class="text-2xl font-bold font-royal text-emeraldRoyal">১২+</p>
+                                <p class="text-xs text-mutedGray">বছরের অভিজ্ঞতা</p>
+                            </div>
+                            <div class="p-4 rounded-2xl bg-white border border-borderGold text-center">
+                                <p class="text-2xl font-bold font-royal text-emeraldRoyal">১৫,০০০+</p>
+                                <p class="text-xs text-mutedGray">সন্তুষ্ট গ্রাহক</p>
+                            </div>
+                            <div class="p-4 rounded-2xl bg-white border border-borderGold text-center">
+                                <p class="text-2xl font-bold font-royal text-emeraldRoyal">১০০%</p>
+                                <p class="text-xs text-mutedGray">ল্যাব সার্টিফায়েড</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Sample of Gemstone Lab Certificate -->
+                    <div class="lg:col-span-6">
+                        <div class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-goldAntique shadow-luxury relative overflow-hidden">
+                            <!-- Watermark -->
+                            <div class="absolute -right-8 -bottom-8 w-44 h-44 rounded-full border-8 border-goldAntique/10 pointer-events-none"></div>
+                            
+                            <div class="flex items-center justify-between border-b border-borderGold pb-4 mb-5">
+                                <div>
+                                    <p class="text-[11px] uppercase tracking-[0.2em] text-goldAntique font-bold">GEMOLOGICAL TESTING REPORT</p>
+                                    <h3 class="text-lg sm:text-xl font-bold text-emeraldRoyal font-royal">আন্তর্জাতিক রত্ন ল্যাব সার্টিফিকেট (নমুনা)</h3>
+                                </div>
+                                <div class="w-12 h-12 rounded-full bg-emeraldRoyal text-goldSoft flex items-center justify-center border-2 border-goldAntique font-bold text-xs shadow-sm">
+                                    CERT
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-4 text-sm mb-6">
+                                <div class="bg-ivoryWarm p-3 rounded-xl border border-borderGold/60">
+                                    <p class="text-xs text-mutedGray">রিপোর্ট নম্বর</p>
+                                    <p class="font-bold text-charcoalDeep">RTN-BD-2026-8841</p>
+                                </div>
+                                <div class="bg-ivoryWarm p-3 rounded-xl border border-borderGold/60">
+                                    <p class="text-xs text-mutedGray">রত্নের নাম (Species)</p>
+                                    <p class="font-bold text-charcoalDeep">Natural Blue Sapphire (নীলা)</p>
+                                </div>
+                                <div class="bg-ivoryWarm p-3 rounded-xl border border-borderGold/60">
+                                    <p class="text-xs text-mutedGray">ওজন (Weight)</p>
+                                    <p class="font-bold text-charcoalDeep">৫.২০ রতি (৪.৭৫ ক্যারেট)</p>
+                                </div>
+                                <div class="bg-ivoryWarm p-3 rounded-xl border border-borderGold/60">
+                                    <p class="text-xs text-mutedGray">উৎপত্তিস্থল (Origin)</p>
+                                    <p class="font-bold text-charcoalDeep">Ceylon (শ্রীলঙ্কা)</p>
+                                </div>
+                                <div class="bg-ivoryWarm p-3 rounded-xl border border-borderGold/60">
+                                    <p class="text-xs text-mutedGray">ট্রিটমেন্ট (Treatment)</p>
+                                    <p class="font-bold text-emerald-700">Unheated / 100% Natural</p>
+                                </div>
+                                <div class="bg-ivoryWarm p-3 rounded-xl border border-borderGold/60">
+                                    <p class="text-xs text-mutedGray">রিফ্র্যাক্টিভ ইনডেক্স</p>
+                                    <p class="font-bold text-charcoalDeep">1.762 – 1.770</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between pt-4 border-t border-borderGold">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-3 h-3 rounded-full bg-emerald-600"></span>
+                                    <span class="text-xs font-semibold text-emeraldRoyal">অনলাইন ভেরিফায়েড সিলযুক্ত</span>
+                                </div>
+                                <div class="text-right">
+                                    <p class="font-serif italic text-emeraldRoyal font-bold text-sm">Chief Gemologist</p>
+                                    <p class="text-[11px] text-mutedGray">Ratnaloy Certified Lab</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3-Step Quality Check Process -->
+                <div>
+                    <div class="text-center max-w-xl mx-auto mb-8">
+                        <span class="text-xs font-bold uppercase tracking-widest text-goldAntique">মান নিয়ন্ত্রণ</span>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-emeraldRoyal font-royal mt-1">আমাদের ৩-ধাপের মান যাচাই প্রক্রিয়া</h2>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-2xl border border-borderGold text-center shadow-sm">
+                            <div class="w-14 h-14 mx-auto rounded-2xl bg-emeraldRoyal text-goldSoft flex items-center justify-center text-xl font-bold mb-4">০১</div>
+                            <h3 class="text-lg font-bold text-emeraldRoyal mb-2">সরাসরি খনি থেকে সংগ্রহ</h3>
+                            <p class="text-sm text-mutedGray">অভিজ্ঞ জেমোলজিস্টের মাধ্যমে শ্রীলঙ্কা, বার্মা ও জাম্বিয়া থেকে সরাসরি প্রাকৃতিক রত্ন বাছাই করা হয়।</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl border border-borderGold text-center shadow-sm">
+                            <div class="w-14 h-14 mx-auto rounded-2xl bg-emeraldRoyal text-goldSoft flex items-center justify-center text-xl font-bold mb-4">০২</div>
+                            <h3 class="text-lg font-bold text-emeraldRoyal mb-2">আধুনিক ল্যাবরেটরি টেস্ট</h3>
+                            <p class="text-sm text-mutedGray">মাইক্রোস্কোপ ও স্পেকট্রোমিটার দিয়ে প্রতিটি পাথরের বিশুদ্ধতা পরীক্ষা করে সার্টিফিকেট ইস্যু করা হয়।</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl border border-borderGold text-center shadow-sm">
+                            <div class="w-14 h-14 mx-auto rounded-2xl bg-emeraldRoyal text-goldSoft flex items-center justify-center text-xl font-bold mb-4">০৩</div>
+                            <h3 class="text-lg font-bold text-emeraldRoyal mb-2">দক্ষ কারিগরের হাতে ফিনিশিং</h3>
+                            <p class="text-sm text-mutedGray">রত্নের তলদেশ খোলা রেখে (যাতে রশ্মি ত্বকে পৌঁছায়) খাঁটি ৯২৫ চাঁদি বা অষ্টধাতুতে আংটি তৈরি করা হয়।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- PAGE 6: যোগাযোগ (CONTACT & CONSULTATION) -->
+        <!-- ======================================================= -->
+        <section id="page-contact" class="page-section">
+            <div class="bg-emeraldRoyal text-white py-10 sm:py-12 border-b border-goldAntique/30">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-goldSoft">আমরা আছি আপনার পাশে</span>
+                    <h1 class="text-3xl sm:text-4xl font-bold font-royal mt-1">ফ্রি রত্ন পরামর্শ ও যোগাযোগ</h1>
+                    <p class="text-emerald-100/80 text-sm sm:text-base mt-2 max-w-2xl mx-auto">কোন রত্নটি আপনার জন্য উপযোগী তা জানতে নিচের ফর্মটি পূরণ করুন অথবা আমাদের শোরুমে আসুন।</p>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="grid lg:grid-cols-12 gap-8 items-start">
+                    <!-- Free Consultation Form -->
+                    <div class="lg:col-span-7 bg-white rounded-3xl border border-borderGold p-6 sm:p-8 shadow-luxury">
+                        <h2 class="text-2xl font-bold text-emeraldRoyal font-royal mb-2">ফ্রি রত্ন পরামর্শ ফর্ম</h2>
+                        <p class="text-sm text-mutedGray mb-6">আমাদের অভিজ্ঞ রত্ন বিশেষজ্ঞ ২৪ ঘণ্টার মধ্যে আপনার সাথে যোগাযোগ করবেন।</p>
+
+                        <form id="consultation-form" onsubmit="handleConsultationSubmit(event)" class="space-y-4">
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-semibold text-charcoalDeep mb-1.5">আপনার নাম *</label>
+                                    <input type="text" id="consult-name" required placeholder="যেমন: মাহবুবুর রহমান" class="w-full px-4 py-3 rounded-xl bg-ivoryWarm border border-borderGold text-sm focus:outline-none focus:border-goldAntique">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-charcoalDeep mb-1.5">মোবাইল নম্বর *</label>
+                                    <input type="tel" id="consult-phone" required placeholder="017XXXXXXXX" class="w-full px-4 py-3 rounded-xl bg-ivoryWarm border border-borderGold text-sm focus:outline-none focus:border-goldAntique">
+                                </div>
+                            </div>
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-semibold text-charcoalDeep mb-1.5">জন্ম তারিখ (ঐচ্ছিক)</label>
+                                    <input type="date" id="consult-dob" class="w-full px-4 py-3 rounded-xl bg-ivoryWarm border border-borderGold text-sm focus:outline-none focus:border-goldAntique">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-charcoalDeep mb-1.5">আপনার রাশি (যদি জানা থাকে)</label>
+                                    <select id="consult-zodiac" class="w-full px-4 py-3 rounded-xl bg-ivoryWarm border border-borderGold text-sm focus:outline-none focus:border-goldAntique">
+                                        <option value="জানা নেই">জানা নেই</option>
+                                        <option value="মেষ">মেষ (Aries)</option>
+                                        <option value="বৃষ">বৃষ (Taurus)</option>
+                                        <option value="মিথুন">মিথুন (Gemini)</option>
+                                        <option value="কর্কট">কর্কট (Cancer)</option>
+                                        <option value="সিংহ">সিংহ (Leo)</option>
+                                        <option value="কন্যা">কন্যা (Virgo)</option>
+                                        <option value="তুলা">তুলা (Libra)</option>
+                                        <option value="বৃশ্চিক">বৃশ্চিক (Scorpio)</option>
+                                        <option value="ধনু">ধনু (Sagittarius)</option>
+                                        <option value="মকর">মকর (Capricorn)</option>
+                                        <option value="কুম্ভ">কুম্ভ (Aquarius)</option>
+                                        <option value="মীন">মীন (Pisces)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-charcoalDeep mb-1.5">আপনার প্রশ্ন বা বার্তা *</label>
+                                <textarea id="consult-message" rows="4" required placeholder="আপনি কোন রত্ন পাথর সম্পর্কে জানতে চান বা আপনার বাজেট কত তা লিখুন..." class="w-full px-4 py-3 rounded-xl bg-ivoryWarm border border-borderGold text-sm focus:outline-none focus:border-goldAntique"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emeraldRoyal to-emeraldDark text-goldSoft font-bold text-base shadow-md hover:brightness-110 transition-all">
+                                ফ্রি পরামর্শের জন্য পাঠান
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Showroom Details & Hours -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="bg-emeraldRoyal text-white rounded-3xl p-6 sm:p-8 border border-goldAntique/30 shadow-luxury">
+                            <h3 class="text-xl font-bold font-royal text-goldSoft mb-4">ঢাকা শোরুমের ঠিকানা</h3>
+                            <ul class="space-y-4 text-sm text-emerald-100/90">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-goldSoft text-lg">📍</span>
+                                    <span><strong>রত্নালয় ফ্ল্যাগশিপ শোরুম</strong><br>লেভেল ৪, দোকান নং- ৪০৫, বসুন্ধরা সিটি শপিং কমপ্লেক্স, পান্থপথ, ঢাকা-১২১৫।</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-goldSoft text-lg">📞</span>
+                                    <span><strong>হটলাইন ও হোয়াটসঅ্যাপ:</strong><br>+880 1700-000000, +880 1800-000000</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-goldSoft text-lg">✉️</span>
+                                    <span><strong>ইমেইল:</strong><br>care@ratnaloy.com.bd</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-goldSoft text-lg">🕒</span>
+                                    <span><strong>খোলার সময়:</strong><br>বুধবার থেকে সোমবার: সকাল ১০:৩০ – রাত ৮:৩০<br>(মঙ্গলবার সাপ্তাহিক বন্ধ)</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Interactive FAQ Accordion -->
+                        <div class="bg-white rounded-3xl border border-borderGold p-6 shadow-sm">
+                            <h3 class="text-lg font-bold text-emeraldRoyal font-royal mb-4">সাধারণ জিজ্ঞাসা (FAQ)</h3>
+                            <div id="faq-container" class="space-y-3">
+                                <!-- Rendered via JS -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== LUXURY FOOTER ==================== -->
+    <footer class="bg-emeraldDark text-emerald-100/85 border-t-2 border-goldAntique/50 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                <!-- Col 1: Brand Info -->
+                <div>
+                    <div class="flex items-center gap-2.5 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-emeraldRoyal border border-goldAntique/40 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-goldSoft" viewBox="0 0 24 24" fill="currentColor"><path d="M6 3h12l4 6-10 12L2 9l4-6z"/></svg>
+                        </div>
+                        <div>
+                            <span class="block text-xl font-bold font-royal text-white leading-none">রত্নালয়</span>
+                            <span class="block text-[10px] uppercase tracking-[0.2em] text-goldSoft">RATNALOY</span>
+                        </div>
+                    </div>
+                    <p class="text-sm leading-relaxed text-emerald-100/75 mb-5">
+                        বাংলাদেশের বিশ্বস্ত ল্যাব-সার্টিফায়েড প্রাকৃতিক রত্ন পাথর ও রাজকীয় আংটির বুটিক। শতভাগ খাঁটি রত্নের নিশ্চয়তা।
+                    </p>
+                    <!-- Social Links -->
+                    <div class="flex items-center gap-3">
+                        <a href="#facebook" onclick="showToast('আমাদের ফেসবুক পেজে স্বাগতম!')" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-goldAntique text-white flex items-center justify-center transition-colors text-xs font-bold">FB</a>
+                        <a href="#instagram" onclick="showToast('আমাদের ইনস্টাগ্রামে স্বাগতম!')" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-goldAntique text-white flex items-center justify-center transition-colors text-xs font-bold">IG</a>
+                        <a href="#youtube" onclick="showToast('আমাদের ইউটিউব চ্যানেলে স্বাগতম!')" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-goldAntique text-white flex items-center justify-center transition-colors text-xs font-bold">YT</a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="text-base font-bold text-goldSoft font-royal mb-4">দ্রুত লিংক</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><button onclick="navigateTo('home')" class="hover:text-goldSoft transition-colors">হোম পেইজ</button></li>
+                        <li><button onclick="navigateTo('shop')" class="hover:text-goldSoft transition-colors">রত্ন কালেকশন</button></li>
+                        <li><button onclick="navigateTo('zodiac')" class="hover:text-goldSoft transition-colors">রাশি ও রত্ন গাইড</button></li>
+                        <li><button onclick="navigateTo('ringsize')" class="hover:text-goldSoft transition-colors">আংটির মাপ ক্যালকুলেটর</button></li>
+                        <li><button onclick="navigateTo('about')" class="hover:text-goldSoft transition-colors">ল্যাব সার্টিফিকেশন</button></li>
+                        <li><button onclick="navigateTo('contact')" class="hover:text-goldSoft transition-colors">ফ্রি পরামর্শ ও যোগাযোগ</button></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Popular Gemstones -->
+                <div>
+                    <h4 class="text-base font-bold text-goldSoft font-royal mb-4">জনপ্রিয় রত্ন পাথর</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><button onclick="goToShopCategory('নীলা')" class="hover:text-goldSoft transition-colors">শ্রীলঙ্কান ইন্দ্রনীলা (Blue Sapphire)</button></li>
+                        <li><button onclick="goToShopCategory('পান্না')" class="hover:text-goldSoft transition-colors">জাম্বিয়ান পান্না (Emerald)</button></li>
+                        <li><button onclick="goToShopCategory('রুবি')" class="hover:text-goldSoft transition-colors">বার্মিজ রুবি / চুনি (Ruby)</button></li>
+                        <li><button onclick="goToShopCategory('পোখরাজ')" class="hover:text-goldSoft transition-colors">সিলোন পোখরাজ (Yellow Sapphire)</button></li>
+                        <li><button onclick="goToShopCategory('রক্ত প্রবাল')" class="hover:text-goldSoft transition-colors">ইতালিয়ান রক্ত প্রবাল (Red Coral)</button></li>
+                        <li><button onclick="goToShopCategory('মুক্তা')" class="hover:text-goldSoft transition-colors">বাসরা ও প্রাকৃতিক মুক্তা (Pearl)</button></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact & Payment Badges -->
+                <div>
+                    <h4 class="text-base font-bold text-goldSoft font-royal mb-4">শোরুম ও পেমেন্ট মাধ্যম</h4>
+                    <p class="text-sm text-emerald-100/75 mb-3">বসুন্ধরা সিটি, লেভেল ৪, দোকান-৪০৫, পান্থপথ, ঢাকা।</p>
+                    <p class="text-sm text-goldSoft font-semibold mb-5">হটলাইন: +880 1700-000000</p>
+                    
+                    <p class="text-xs uppercase tracking-wider text-emerald-100/60 mb-2.5">নিরাপদ পেমেন্ট মাধ্যম</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 rounded-md bg-pink-600/90 text-white text-[11px] font-bold">bKash</span>
+                        <span class="px-2.5 py-1 rounded-md bg-orange-600/90 text-white text-[11px] font-bold">Nagad</span>
+                        <span class="px-2.5 py-1 rounded-md bg-purple-700/90 text-white text-[11px] font-bold">Rocket</span>
+                        <span class="px-2.5 py-1 rounded-md bg-blue-800/90 text-white text-[11px] font-bold">Visa/MC</span>
+                        <span class="px-2.5 py-1 rounded-md bg-goldAntique text-emeraldDark text-[11px] font-bold">Cash on Delivery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright Bar -->
+        <div class="border-t border-white/10 bg-[#051B15]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-emerald-100/60">
+                <p>© ২০২৬ রত্নালয় (Ratnaloy)। সর্বস্বত্ব সংরক্ষিত।</p>
+                <p>১০০% প্রাকৃতিক ও ল্যাব-সার্টিফায়েড রত্ন পাথরের নিশ্চয়তা।</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== PRODUCT QUICK VIEW MODAL ==================== -->
+    <div id="quick-view-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+        <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[92vh] overflow-y-auto border border-goldAntique/40 shadow-2xl relative">
+            <button onclick="closeQuickView()" aria-label="বন্ধ করুন" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-ivoryWarm hover:bg-emeraldRoyal hover:text-white flex items-center justify-center transition-colors font-bold">✕</button>
+            <div id="quick-view-content" class="p-6 sm:p-8">
+                <!-- Rendered dynamically via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== SLIDE-OVER SHOPPING CART DRAWER ==================== -->
+    <div id="cart-overlay" onclick="toggleCart(false)" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-xs transition-opacity"></div>
+    <aside id="cart-drawer" class="fixed top-0 right-0 z-50 h-full w-full max-w-md bg-white shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+        <!-- Drawer Header -->
+        <div class="px-6 py-5 bg-emeraldRoyal text-white flex items-center justify-between border-b border-goldAntique/30">
+            <div>
+                <h2 class="text-lg font-bold font-royal text-goldSoft">আপনার শপিং কার্ট</h2>
+                <p id="cart-drawer-count" class="text-xs text-emerald-100/80">০টি আংটি যুক্ত করা হয়েছে</p>
+            </div>
+            <button onclick="toggleCart(false)" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white">✕</button>
+        </div>
+
+        <!-- Cart Items List -->
+        <div id="cart-items-container" class="flex-1 overflow-y-auto p-5 space-y-4 bg-ivoryWarm/50">
+            <!-- Rendered via JS -->
+        </div>
+
+        <!-- Cart Footer -->
+        <div class="p-6 bg-white border-t border-borderGold space-y-4">
+            <div class="flex items-center justify-between text-base">
+                <span class="font-medium text-mutedGray">সর্বমোট মূল্য:</span>
+                <span id="cart-subtotal" class="text-xl font-bold text-emeraldRoyal">৳ ০</span>
+            </div>
+            <p class="text-xs text-mutedGray">সারা বাংলাদেশে ফ্রি হোম ডেলিভারি ও ক্যাশ অন ডেলিভারি সুবিধা।</p>
+            <button id="checkout-btn" onclick="openCheckoutModal()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-goldAntique to-[#b68d39] text-white font-bold text-base shadow-md hover:brightness-105 transition-all disabled:opacity-50 disabled:cursor-not-allowed">
+                অর্ডার কনফার্ম করুন
+            </button>
+        </div>
+    </aside>
+
+    <!-- ==================== CHECKOUT CONFIRMATION MODAL ==================== -->
+    <div id="checkout-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+        <div class="bg-white rounded-3xl max-w-lg w-full max-h-[92vh] overflow-y-auto border border-goldAntique/50 shadow-2xl p-6 sm:p-8 relative">
+            <button onclick="closeCheckoutModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-ivoryWarm hover:bg-emeraldRoyal hover:text-white flex items-center justify-center font-bold">✕</button>
+            
+            <div id="checkout-form-view">
+                <span class="text-xs font-bold uppercase tracking-widest text-goldAntique">অর্ডার সম্পন্ন করুন</span>
+                <h3 class="text-2xl font-bold text-emeraldRoyal font-royal mt-1 mb-5">ডেলিভারি তথ্য দিন</h3>
+                
+                <form onsubmit="submitOrder(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-semibold mb-1">পূর্ণ নাম *</label>
+                        <input type="text" id="order-name" required placeholder="আপনার নাম লিখুন" class="w-full px-4 py-2.5 rounded-xl bg-ivoryWarm border border-borderGold text-sm focus:outline-none focus:border-goldAntique">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-1">মোবাইল নম্বর *</label>
+                        <input type="tel" id="order-phone" required placeholder="017XXXXXXXX" class="w-full px-4 py-2.5 rounded-xl bg-ivoryWarm border border-borderGold text-sm focus:outline-none focus:border-goldAntique">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-1">সম্পূর্ণ ঠিকানা *</label>
+                        <textarea id="order-address" rows="2" required placeholder="বাসা নং, রোড, থানা, জেলা..." class="w-full px-4 py-2.5 rounded-xl bg-ivoryWarm border border-borderGold text-sm focus:outline-none focus:border-goldAntique"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-1.5">পেমেন্ট মাধ্যম</label>
+                        <div class="grid grid-cols-2 gap-2.5">
+                            <label class="flex items-center gap-2 p-3 rounded-xl border border-borderGold bg-ivoryWarm cursor-pointer">
+                                <input type="radio" name="payment" value="Cash on Delivery" checked class="accent-emeraldRoyal">
+                                <span class="text-xs font-semibold">ক্যাশ অন ডেলিভারি</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-3 rounded-xl border border-borderGold bg-ivoryWarm cursor-pointer">
+                                <input type="radio" name="payment" value="bKash / Nagad" class="accent-emeraldRoyal">
+                                <span class="text-xs font-semibold">বিকাশ / নগদ</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-emeraldRoyal/5 border border-emeraldRoyal/15 flex items-center justify-between text-sm">
+                        <span class="font-medium text-charcoalDeep">মোট পরিশোধযোগ্য:</span>
+                        <span id="checkout-total-display" class="text-lg font-bold text-emeraldRoyal">৳ ০</span>
+                    </div>
+                    <button type="submit" class="w-full py-3.5 rounded-xl bg-emeraldRoyal text-goldSoft font-bold text-base hover:bg-emeraldDark transition-colors">
+                        অর্ডার নিশ্চিত করুন
+                    </button>
+                </form>
+            </div>
+
+            <!-- Order Success State -->
+            <div id="checkout-success-view" class="hidden text-center py-6 space-y-4">
+                <div class="w-16 h-16 mx-auto rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-3xl font-bold">✓</div>
+                <h3 class="text-2xl font-bold text-emeraldRoyal font-royal">আপনার অর্ডারটি সফলভাবে গৃহীত হয়েছে!</h3>
+                <p class="text-sm text-mutedGray leading-relaxed">ধন্যবাদ! আমাদের প্রতিনিধি শীঘ্রই আপনার মোবাইলে কল করে অর্ডার ও আংটির সাইজ কনফার্ম করবেন।</p>
+                <div class="p-3 rounded-xl bg-ivoryWarm border border-borderGold text-xs font-semibold text-emeraldRoyal">
+                    অর্ডার আইডি: <span id="order-id-text">#RTN-2026</span>
+                </div>
+                <button onclick="closeCheckoutModal(); navigateTo('home');" class="px-6 py-2.5 rounded-xl bg-emeraldRoyal text-white font-semibold text-sm">হোম পেইজে ফিরে যান</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== TOAST NOTIFICATION ==================== -->
+    <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+    <!-- ==================== APPLICATION LOGIC (JAVASCRIPT) ==================== -->
+    <script>
+        // ---------------------------------------------------------
+        // 1. HELPER: BENGALI NUMBER & CURRENCY FORMATTER
+        // ---------------------------------------------------------
+        const bnDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+        function toBengaliNumber(num) {
+            return String(num).replace(/\d/g, d => bnDigits[d]);
+        }
+        function formatBDT(amount) {
+            const formatted = amount.toLocaleString('en-IN');
+            return '৳ ' + toBengaliNumber(formatted);
+        }
+
+        // ---------------------------------------------------------
+        // 2. CUSTOM SVG GEMSTONE RING GENERATOR
+        // ---------------------------------------------------------
+        function createGemRingSVG(colors, shape = 'oval', metal = 'silver') {
+            const [c1, c2, c3] = colors;
+            const uid = 'g_' + Math.random().toString(36).substring(2, 9);
+            
+            const metalGrads = {
+                silver: ['#FFFFFF', '#CBD5E1', '#64748B', '#F1F5F9'],
+                gold: ['#FFF2C2', '#D4AF37', '#9A7221', '#F5DF9D'],
+                ashtadhatu: ['#FDE68A', '#C98A4B', '#7C4A1D', '#E8B878']
+            };
+            const [m1, m2, m3, m4] = metalGrads[metal] || metalGrads.silver;
+
+            let gemMarkup = '';
+            if (shape === 'emerald') {
+                gemMarkup = `
+                    <polygon points="74,40 126,40 136,52 136,88 126,100 74,100 64,88 64,52" fill="url(#${uid}_gem)" stroke="${m4}" stroke-width="2.5"/>
+                    <polygon points="82,50 118,50 125,58 125,82 118,90 82,90 75,82 75,58" fill="#ffffff" fill-opacity="0.18" stroke="#ffffff" stroke-opacity="0.45" stroke-width="1"/>
+                `;
+            } else if (shape === 'pearl') {
+                gemMarkup = `
+                    <circle cx="100" cy="70" r="30" fill="url(#${uid}_gem)" stroke="${m4}" stroke-width="2"/>
+                    <ellipse cx="89" cy="58" rx="9" ry="5" transform="rotate(-30 89 58)" fill="#ffffff" opacity="0.7"/>
+                `;
+            } else if (shape === 'catseye') {
+                gemMarkup = `
+                    <ellipse cx="100" cy="70" rx="34" ry="26" fill="url(#${uid}_gem)" stroke="${m4}" stroke-width="2.5"/>
+                    <line x1="100" y1="45" x2="100" y2="95" stroke="#FEF9C3" stroke-width="4" opacity="0.85" stroke-linecap="round"/>
+                    <line x1="100" y1="45" x2="100" y2="95" stroke="#FFFFFF" stroke-width="1.5" opacity="0.95" stroke-linecap="round"/>
+                `;
+            } else {
+                // Classic Faceted Oval / Cushion
+                gemMarkup = `
+                    <ellipse cx="100" cy="70" rx="35" ry="28" fill="url(#${uid}_gem)" stroke="${m4}" stroke-width="2.5"/>
+                    <ellipse cx="100" cy="70" rx="22" ry="16" fill="#ffffff" fill-opacity="0.15" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1"/>
+                    <line x1="78" y1="54" x2="68" y2="48" stroke="#ffffff" stroke-opacity="0.45"/>
+                    <line x1="122" y1="54" x2="132" y2="48" stroke="#ffffff" stroke-opacity="0.45"/>
+                    <line x1="78" y1="86" x2="68" y2="92" stroke="#ffffff" stroke-opacity="0.45"/>
+                    <line x1="122" y1="86" x2="132" y2="92" stroke="#ffffff" stroke-opacity="0.45"/>
+                `;
+            }
+
+            return `
+                <svg viewBox="0 0 200 200" class="w-full h-full drop-shadow-md transition-transform duration-500 group-hover:scale-105" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="${uid}_band" x1="40" y1="70" x2="160" y2="180" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="${m1}"/>
+                            <stop offset="40%" stop-color="${m2}"/>
+                            <stop offset="75%" stop-color="${m3}"/>
+                            <stop offset="100%" stop-color="${m4}"/>
+                        </linearGradient>
+                        <radialGradient id="${uid}_gem" cx="38%" cy="32%" r="68%">
+                            <stop offset="0%" stop-color="${c1}"/>
+                            <stop offset="45%" stop-color="${c2}"/>
+                            <stop offset="100%" stop-color="${c3}"/>
+                        </radialGradient>
+                    </defs>
+                    <!-- Soft Glow -->
+                    <circle cx="100" cy="72" r="46" fill="${c2}" opacity="0.14"/>
+                    <!-- Ring Shank -->
+                    <ellipse cx="100" cy="128" rx="50" ry="46" stroke="url(#${uid}_band)" stroke-width="14"/>
+                    <ellipse cx="100" cy="128" rx="43" ry="39" stroke="${m3}" stroke-width="1.5" opacity="0.5"/>
+                    <!-- Setting Base -->
+                    <ellipse cx="100" cy="84" rx="34" ry="14" fill="url(#${uid}_band)"/>
+                    <!-- Gemstone -->
+                    ${gemMarkup}
+                    <!-- 4 Prongs -->
+                    <circle cx="74" cy="49" r="4" fill="${m1}" stroke="${m3}" stroke-width="1"/>
+                    <circle cx="126" cy="49" r="4" fill="${m1}" stroke="${m3}" stroke-width="1"/>
+                    <circle cx="74" cy="91" r="4" fill="${m1}" stroke="${m3}" stroke-width="1"/>
+                    <circle cx="126" cy="91" r="4" fill="${m1}" stroke="${m3}" stroke-width="1"/>
+                    <!-- Sparkle -->
+                    <path d="M84 55L86 60L91 62L86 64L84 69L82 64L77 62L82 60L84 55Z" fill="#FFFFFF" opacity="0.9"/>
+                </svg>
+            `;
+        }
+
+        // ---------------------------------------------------------
+        // 3. PRODUCT CATALOG DATA (8 AUTHENTIC GEMSTONE RINGS)
+        // ---------------------------------------------------------
+        const products = [
+            {
+                id: 1,
+                name: 'শ্রীলঙ্কান ইন্দ্রনীলা রাজকীয় আংটি',
+                category: 'নীলা',
+                origin: 'শ্রীলঙ্কা (Ceylon)',
+                weight: '৫.২ রতি (৪.৭ ক্যারেট)',
+                defaultMetal: '৯২৫ খাঁটি চাঁদি',
+                metalKey: 'silver',
+                price: 18500,
+                featured: true,
+                colors: ['#93C5FD', '#1D4ED8', '#172554'],
+                shape: 'oval',
+                description: '১০০% প্রাকৃতিক ও আনহিটেড শ্রীলঙ্কান ইন্দ্রনীলা। শনি গ্রহের শুভ প্রভাবে কর্মক্ষেত্রে উন্নতি ও মানসিক স্থিরতা আনতে সহায়ক। সাথে আন্তর্জাতিক ল্যাব সার্টিফিকেট।'
+            },
+            {
+                id: 2,
+                name: 'জাম্বিয়ান প্রাকৃতিক পান্না আংটি',
+                category: 'পান্না',
+                origin: 'জাম্বিয়া (Zambia)',
+                weight: '৪.৮ রতি (৪.৩ ক্যারেট)',
+                defaultMetal: '৯২৫ খাঁটি চাঁদি',
+                metalKey: 'silver',
+                price: 16200,
+                featured: true,
+                colors: ['#6EE7B7', '#059669', '#022C22'],
+                shape: 'emerald',
+                description: 'উজ্জ্বল সবুজ আভার জাম্বিয়ান পান্না। বুধ গ্রহের রত্ন হিসেবে বুদ্ধি, ব্যবসা ও যোগাযোগ দক্ষতা বৃদ্ধিতে অত্যন্ত কার্যকর।'
+            },
+            {
+                id: 3,
+                name: 'বার্মিজ প্রিমিয়াম রুবি (চুনি) আংটি',
+                category: 'রুবি',
+                origin: 'বার্মা (Myanmar)',
+                weight: '৫.০ রতি (৪.৫ ক্যারেট)',
+                defaultMetal: 'অষ্টধাতু',
+                metalKey: 'ashtadhatu',
+                price: 21000,
+                featured: true,
+                colors: ['#FDA4AF', '#E11D48', '#4C0519'],
+                shape: 'oval',
+                description: 'রক্তিম আভার খাঁটি বার্মিজ চুনি বা রুবি। সূর্য গ্রহের রত্ন হিসেবে আত্মবিশ্বাস, নেতৃত্বগুণ ও সামাজিক মর্যাদা বৃদ্ধি করে।'
+            },
+            {
+                id: 4,
+                name: 'সিলোন হলুদ পোখরাজ আংটি',
+                category: 'পোখরাজ',
+                origin: 'শ্রীলঙ্কা (Ceylon)',
+                weight: '৫.৫ রতি (৫.০ ক্যারেট)',
+                defaultMetal: 'অষ্টধাতু',
+                metalKey: 'gold',
+                price: 19500,
+                featured: true,
+                colors: ['#FEF08A', '#EAB308', '#713F12'],
+                shape: 'emerald',
+                description: 'বৃহস্পতি গ্রহের শক্তিশালী রত্ন সিলোন পোখরাজ। অর্থনৈতিক সমৃদ্ধি, শিক্ষা ও পারিবারিক শান্তি আনতে ব্যাপকভাবে সমাদৃত।'
+            },
+            {
+                id: 5,
+                name: 'ইতালিয়ান রক্ত প্রবাল আংটি',
+                category: 'রক্ত প্রবাল',
+                origin: 'ইতালি (Italy)',
+                weight: '৭.০ রতি (৬.৩ ক্যারেট)',
+                defaultMetal: '৯২৫ খাঁটি চাঁদি',
+                metalKey: 'silver',
+                price: 6800,
+                featured: false,
+                colors: ['#FCA5A5', '#DC2626', '#7F1D1D'],
+                shape: 'oval',
+                description: 'গাঢ় লাল রঙের প্রাকৃতিক ইতালিয়ান রক্ত প্রবাল। মঙ্গল গ্রহের শুভ প্রভাবে সাহস, কর্মশক্তি ও শারীরিক সুস্থতা বৃদ্ধিতে সাহায্য করে।'
+            },
+            {
+                id: 6,
+                name: 'প্রাকৃতিক সাউথ সি মুক্তা আংটি',
+                category: 'মুক্তা',
+                origin: 'জাপান / সাউথ সি',
+                weight: '৬.৫ রতি (৫.৯ ক্যারেট)',
+                defaultMetal: '৯২৫ খাঁটি চাঁদি',
+                metalKey: 'silver',
+                price: 5500,
+                featured: false,
+                colors: ['#FFFFFF', '#E2E8F0', '#94A3B8'],
+                shape: 'pearl',
+                description: 'মসৃণ ও দ্যুতিময় প্রাকৃতিক মুক্তা। চন্দ্র গ্রহের রত্ন হিসেবে রাগ নিয়ন্ত্রণ, মানসিক প্রশান্তি ও সুনিদ্রা আনতে অত্যন্ত উপকারী।'
+            },
+            {
+                id: 7,
+                name: 'সিলোন গোমেদ (Hessonite) আংটি',
+                category: 'গোমেদ',
+                origin: 'শ্রীলঙ্কা (Ceylon)',
+                weight: '৬.০ রতি (৫.৪ ক্যারেট)',
+                defaultMetal: '৯২৫ খাঁটি চাঁদি',
+                metalKey: 'silver',
+                price: 7400,
+                featured: false,
+                colors: ['#FDBA74', '#C2410C', '#431407'],
+                shape: 'oval',
+                description: 'মধু রঙের স্বচ্ছ সিলোন গোমেদ। রাহুর অশুভ প্রভাব কাটিয়ে জীবনে স্থিতিশীলতা ও সাফল্য আনতে এটি ধারণ করা হয়।'
+            },
+            {
+                id: 8,
+                name: 'লহসুনীয়া ক্যাটস আই আংটি',
+                category: 'ক্যাটস আই',
+                origin: 'শ্রীলঙ্কা (Ceylon)',
+                weight: '৫.৮ রতি (৫.২ ক্যারেট)',
+                defaultMetal: '৯২৫ খাঁটি চাঁদি',
+                metalKey: 'silver',
+                price: 12800,
+                featured: false,
+                colors: ['#D9F99D', '#65A30D', '#1A2E05'],
+                shape: 'catseye',
+                description: 'উজ্জ্বল আলোকরেখাবিশিষ্ট প্রাকৃতিক ক্যাটস আই (বৈদূর্যমণি)। কেতু গ্রহের রত্ন হিসেবে অপ্রত্যাশিত বাধা দূর করতে সহায়ক।'
+            }
+        ];
+
+        const categories = ['সব', 'নীলা', 'পান্না', 'রুবি', 'পোখরাজ', 'রক্ত প্রবাল', 'মুক্তা', 'গোমেদ', 'ক্যাটস আই'];
+
+        // ---------------------------------------------------------
+        // 4. 12 ZODIAC SIGNS DATA
+        // ---------------------------------------------------------
+        const zodiacData = [
+            { id: 'aries', name: 'মেষ', eng: 'Aries', symbol: '♈', dates: '২১ মার্চ – ১৯ এপ্রিল', planet: 'মঙ্গল', stone: 'রক্ত প্রবাল', stoneKey: 'রক্ত প্রবাল', finger: 'অনামিকা (Ring Finger)', metal: 'তামা, সোনা বা চাঁদি', desc: 'মেষ রাশির জাতক-জাতিকাদের জন্য ইতালিয়ান রক্ত প্রবাল সাহস, আত্মবিশ্বাস এবং কর্মক্ষেত্রে সাফল্য বয়ে আনে।' },
+            { id: 'taurus', name: 'বৃষ', eng: 'Taurus', symbol: '♉', dates: '২০ এপ্রিল – ২০ মে', planet: 'শুক্র', stone: 'পান্না / ওপাল', stoneKey: 'পান্না', finger: 'কনিষ্ঠা বা মধ্যমা', metal: '৯২৫ খাঁটি চাঁদি', desc: 'বৃষ রাশির জন্য পান্না বা ওপাল আর্থিক সমৃদ্ধি, সৃজনশীলতা এবং পারিবারিক সুখ বজায় রাখতে সাহায্য করে।' },
+            { id: 'gemini', name: 'মিথুন', eng: 'Gemini', symbol: '♊', dates: '২১ মে – ২০ জুন', planet: 'বুধ', stone: 'জাম্বিয়ান পান্না', stoneKey: 'পান্না', finger: 'কনিষ্ঠা (Little Finger)', metal: '৯২৫ চাঁদি বা সোনা', desc: 'মিথুন রাশির অধিপতি বুধ। প্রাকৃতিক পান্না ধারণে বুদ্ধিমত্তা, ব্যবসা এবং যোগাযোগ দক্ষতা বহুগুণ বৃদ্ধি পায়।' },
+            { id: 'cancer', name: 'কর্কট', eng: 'Cancer', symbol: '♋', dates: '২১ জুন – ২২ জুলাই', planet: 'চন্দ্র', stone: 'প্রাকৃতিক মুক্তা', stoneKey: 'মুক্তা', finger: 'কনিষ্ঠা (Little Finger)', metal: '৯২৫ খাঁটি চাঁদি', desc: 'কর্কট রাশির জন্য মুক্তা অত্যন্ত শুভ। এটি মানসিক অস্থিরতা দূর করে এবং শান্তি ও সৌভাগ্য নিয়ে আসে।' },
+            { id: 'leo', name: 'সিংহ', eng: 'Leo', symbol: '♌', dates: '২৩ জুলাই – ২২ আগস্ট', planet: 'সূর্য', stone: 'বার্মিজ রুবি (চুনি)', stoneKey: 'রুবি', finger: 'অনামিকা (Ring Finger)', metal: 'সোনা বা অষ্টধাতু', desc: 'সিংহ রাশির অধিপতি সূর্য। খাঁটি রুবি বা চুনি ধারণে নেতৃত্বগুণ, সম্মান ও কর্মক্ষেত্রে উচ্চ পদমর্যাদা লাভ হয়।' },
+            { id: 'virgo', name: 'কন্যা', eng: 'Virgo', symbol: '♍', dates: '২৩ আগস্ট – ২২ সেপ্টেম্বর', planet: 'বুধ', stone: 'প্রাকৃতিক পান্না', stoneKey: 'পান্না', finger: 'কনিষ্ঠা (Little Finger)', metal: '৯২৫ চাঁদি বা সোনা', desc: 'কন্যা রাশির জাতকদের জন্য পান্না একাগ্রতা, পেশাগত উন্নতি এবং সঠিক সিদ্ধান্ত গ্রহণে দারুণ সহায়ক।' },
+            { id: 'libra', name: 'তুলা', eng: 'Libra', symbol: '♎', dates: '২৩ সেপ্টেম্বর – ২২ অক্টোবর', planet: 'শুক্র', stone: 'ইন্দ্রনীলা / মুক্তা', stoneKey: 'নীলা', finger: 'মধ্যমা (Middle Finger)', metal: '৯২৫ খাঁটি চাঁদি', desc: 'তুলা রাশির জন্য ভারসাম্য ও সৌভাগ্য আনতে ইন্দ্রনীলা বা প্রাকৃতিক মুক্তা বিশেষভাবে উপকারী।' },
+            { id: 'scorpio', name: 'বৃশ্চিক', eng: 'Scorpio', symbol: '♏', dates: '২৩ অক্টোবর – ২১ নভেম্বর', planet: 'মঙ্গল', stone: 'রক্ত প্রবাল', stoneKey: 'রক্ত প্রবাল', finger: 'অনামিকা (Ring Finger)', metal: 'সোনা, তামা বা চাঁদি', desc: 'বৃশ্চিক রাশির জন্য রক্ত প্রবাল শত্রুনাশ, দৃঢ় মানসিকতা এবং দীর্ঘদিনের আটকে থাকা কাজে গতি আনে।' },
+            { id: 'sagittarius', name: 'ধনু', eng: 'Sagittarius', symbol: '♐', dates: '২২ নভেম্বর – ২১ ডিসেম্বর', planet: 'বৃহস্পতি', stone: 'হলুদ পোখরাজ', stoneKey: 'পোখরাজ', finger: 'তর্জনী (Index Finger)', metal: 'সোনা বা অষ্টধাতু', desc: 'ধনু রাশির অধিপতি বৃহস্পতি। সিলোন পোখরাজ ধারণে জ্ঞান, সম্পদ এবং জীবনের সকল ক্ষেত্রে সৌভাগ্য উদয় হয়।' },
+            { id: 'capricorn', name: 'মকর', eng: 'Capricorn', symbol: '♑', dates: '২২ ডিসেম্বর – ১৯ জানুয়ারি', planet: 'শনি', stone: 'শ্রীলঙ্কান ইন্দ্রনীলা', stoneKey: 'নীলা', finger: 'মধ্যমা (Middle Finger)', metal: '৯২৫ খাঁটি চাঁদি', desc: 'মকর রাশির অধিপতি শনি। খাঁটি ইন্দ্রনীলা কর্মক্ষেত্রে দ্রুত সাফল্য, ধৈর্য এবং অর্থনৈতিক উন্নতি এনে দেয়।' },
+            { id: 'aquarius', name: 'কুম্ভ', eng: 'Aquarius', symbol: '♒', dates: '২০ জানুয়ারি – ১৮ ফেব্রুয়ারি', planet: 'শনি', stone: 'ইন্দ্রনীলা / গোমেদ', stoneKey: 'নীলা', finger: 'মধ্যমা (Middle Finger)', metal: '৯২৫ খাঁটি চাঁদি', desc: 'কুম্ভ রাশির জন্য ইন্দ্রনীলা বা গোমেদ নতুন সুযোগ সৃষ্টি করে এবং জীবনের অপ্রত্যাশিত বাধা দূর করে।' },
+            { id: 'pisces', name: 'মীন', eng: 'Pisces', symbol: '♓', dates: '১৯ ফেব্রুয়ারি – ২০ মার্চ', planet: 'বৃহস্পতি', stone: 'হলুদ পোখরাজ', stoneKey: 'পোখরাজ', finger: 'তর্জনী (Index Finger)', metal: 'সোনা বা অষ্টধাতু', desc: 'মীন রাশির জাতক-জাতিকাদের জন্য হলুদ পোখরাজ সুস্বাস্থ্য, আধ্যাত্মিক প্রশান্তি এবং সমৃদ্ধি বয়ে আনে।' }
+        ];
+
+        // ---------------------------------------------------------
+        // 5. FAQ DATA
+        // ---------------------------------------------------------
+        const faqData = [
+            { q: 'আপনাদের রত্ন পাথরগুলো কি ১০০% আসল?', a: 'হ্যাঁ, আমাদের প্রতিটি রত্ন ১০০% প্রাকৃতিক এবং প্রতিটি অর্ডারের সাথে অনুমোদিত ল্যাব টেস্ট সার্টিফিকেট প্রদান করা হয়।' },
+            { q: 'ডেলিভারি পেতে কত দিন সময় লাগে?', a: 'ঢাকার ভেতরে ২৪-৪৮ ঘণ্টা এবং ঢাকার বাইরে সারা বাংলাদেশে ২-৪ কর্মদিবসের মধ্যে হোম ডেলিভারি দেওয়া হয়।' },
+            { q: 'আংটির সাইজ ছোট-বড় হলে কি পরিবর্তন করা যাবে?', a: 'অবশ্যই! আংটি হাতে পাওয়ার ৭ দিনের মধ্যে আপনি বিনামূল্যে সাইজ পরিবর্তন বা রিপ্লেসমেন্ট সুবিধা পাবেন।' },
+            { q: 'অগ্রিম কোনো টাকা দিতে হয় কি?', a: 'সম্পূর্ণ ক্যাশ অন ডেলিভারি সুবিধা রয়েছে। তবে কাস্টম সাইজে আংটি তৈরির ক্ষেত্রে সামান্য ডেলিভারি চার্জ অগ্রিম প্রযোজ্য হতে পারে।' }
+        ];
+
+        // ---------------------------------------------------------
+        // 6. APPLICATION STATE
+        // ---------------------------------------------------------
+        let activePage = 'home';
+        let selectedCategory = 'সব';
+        let searchQuery = '';
+        let selectedZodiacId = 'aries';
+        let cart = [];
+
+        // ---------------------------------------------------------
+        // 7. NAVIGATION (SPA ROUTING)
+        // ---------------------------------------------------------
+        function navigateTo(pageId) {
+            activePage = pageId;
+            document.querySelectorAll('.page-section').forEach(sec => sec.classList.remove('active'));
+            const target = document.getElementById('page-' + pageId);
+            if (target) target.classList.add('active');
+
+            // Highlight active nav links
+            document.querySelectorAll('.nav-link').forEach(btn => {
+                if (btn.dataset.nav === pageId) {
+                    btn.classList.add('bg-emeraldRoyal/10', 'text-emeraldRoyal', 'font-bold');
+                } else {
+                    btn.classList.remove('bg-emeraldRoyal/10', 'text-emeraldRoyal', 'font-bold');
+                }
+            });
+            document.querySelectorAll('.mobile-nav-link').forEach(btn => {
+                if (btn.dataset.navMobile === pageId) {
+                    btn.classList.add('bg-emeraldRoyal/10', 'text-emeraldRoyal', 'font-bold');
+                } else {
+                    btn.classList.remove('bg-emeraldRoyal/10', 'text-emeraldRoyal', 'font-bold');
+                }
+            });
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function goToShopCategory(cat) {
+            selectedCategory = cat;
+            searchQuery = '';
+            document.getElementById('global-search-input').value = '';
+            renderCategoryFilters();
+            renderShopProducts();
+            navigateTo('shop');
+        }
+
+        function toggleMobileMenu(forceState) {
+            const menu = document.getElementById('mobile-menu');
+            if (typeof forceState === 'boolean') {
+                menu.classList.toggle('hidden', !forceState);
+            } else {
+                menu.classList.toggle('hidden');
+            }
+        }
+
+        function toggleSearchBar() {
+            const bar = document.getElementById('header-search-bar');
+            bar.classList.toggle('hidden');
+            if (!bar.classList.contains('hidden')) {
+                document.getElementById('global-search-input').focus();
+            }
+        }
+
+        function handleGlobalSearch(val) {
+            searchQuery = val.trim().toLowerCase();
+            if (searchQuery.length > 0 && activePage !== 'shop') {
+                navigateTo('shop');
+            }
+            renderShopProducts();
+        }
+
+        function clearSearch() {
+            searchQuery = '';
+            document.getElementById('global-search-input').value = '';
+            renderShopProducts();
+        }
+
+        // ---------------------------------------------------------
+        // 8. RENDER PRODUCT CARDS (FEATURED & SHOP)
+        // ---------------------------------------------------------
+        function buildProductCardHTML(p) {
+            return `
+                <div class="group bg-white rounded-2xl border border-borderGold overflow-hidden shadow-sm hover:shadow-luxury transition-all duration-300 flex flex-col">
+                    <!-- Visual Area -->
+                    <div onclick="openQuickView(${p.id})" class="relative h-56 bg-gradient-to-b from-ivoryWarm to-white p-5 flex items-center justify-center cursor-pointer border-b border-borderGold/60">
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-emeraldRoyal/10 text-emeraldRoyal text-[11px] font-bold">${p.category}</span>
+                        <span class="absolute top-3 right-3 px-2 py-0.5 rounded-md bg-white/90 border border-borderGold text-[10px] font-semibold text-mutedGray">ল্যাব সার্টিফায়েড</span>
+                        <div class="w-40 h-40">
+                            ${createGemRingSVG(p.colors, p.shape, p.metalKey)}
+                        </div>
+                    </div>
+
+                    <!-- Content Area -->
+                    <div class="p-5 flex-1 flex flex-col">
+                        <h3 onclick="openQuickView(${p.id})" class="text-base font-bold text-charcoalDeep hover:text-emeraldRoyal cursor-pointer leading-snug mb-2 line-clamp-2">${p.name}</h3>
+                        
+                        <div class="space-y-1 text-xs text-mutedGray mb-4">
+                            <p><strong class="text-charcoalDeep">উৎপত্তি:</strong> ${p.origin}</p>
+                            <p><strong class="text-charcoalDeep">ওজন:</strong> ${p.weight}</p>
+                            <p><strong class="text-charcoalDeep">ধাতু:</strong> ${p.defaultMetal}</p>
+                        </div>
+
+                        <div class="mt-auto pt-3 border-t border-borderGold/60">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-lg font-bold text-emeraldRoyal">${formatBDT(p.price)}</span>
+                                <span class="text-[11px] text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded-md">স্টকে আছে</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2">
+                                <button onclick="openQuickView(${p.id})" class="py-2 px-2 rounded-xl border border-emeraldRoyal/30 text-emeraldRoyal text-xs font-semibold hover:bg-ivoryWarm transition-colors">
+                                    বিস্তারিত দেখুন
+                                </button>
+                                <button onclick="addToCart(${p.id}, 20, '${p.defaultMetal}')" class="py-2 px-2 rounded-xl bg-emeraldRoyal text-goldSoft text-xs font-semibold hover:bg-emeraldDark transition-colors">
+                                    কার্টে যোগ করুন
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderFeaturedProducts() {
+            const container = document.getElementById('featured-products-grid');
+            const featured = products.filter(p => p.featured).slice(0, 4);
+            container.innerHTML = featured.map(buildProductCardHTML).join('');
+        }
+
+        function renderCategoryFilters() {
+            const container = document.getElementById('category-filters');
+            container.innerHTML = categories.map(cat => {
+                const isActive = cat === selectedCategory;
+                return `
+                    <button onclick="selectCategory('${cat}')" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-all ${isActive ? 'bg-emeraldRoyal text-goldSoft shadow-sm' : 'bg-ivoryWarm text-charcoalDeep hover:bg-goldSoft/25 border border-borderGold/70'}">
+                        ${cat}
+                    </button>
+                `;
+            }).join('');
+        }
+
+        function selectCategory(cat) {
+            selectedCategory = cat;
+            renderCategoryFilters();
+            renderShopProducts();
+        }
+
+        function renderShopProducts() {
+            const container = document.getElementById('shop-products-grid');
+            const emptyState = document.getElementById('shop-empty-state');
+            const sortVal = document.getElementById('sort-select').value;
+            const searchIndicator = document.getElementById('shop-search-indicator');
+
+            if (searchQuery) {
+                searchIndicator.classList.remove('hidden');
+                document.getElementById('shop-search-term').textContent = searchQuery;
+            } else {
+                searchIndicator.classList.add('hidden');
+            }
+
+            let filtered = products.filter(p => {
+                const matchCat = selectedCategory === 'সব' || p.category === selectedCategory;
+                const matchSearch = !searchQuery || p.name.toLowerCase().includes(searchQuery) || p.category.toLowerCase().includes(searchQuery) || p.origin.toLowerCase().includes(searchQuery);
+                return matchCat && matchSearch;
+            });
+
+            if (sortVal === 'price-asc') filtered.sort((a, b) => a.price - b.price);
+            if (sortVal === 'price-desc') filtered.sort((a, b) => b.price - a.price);
+
+            if (filtered.length === 0) {
+                container.innerHTML = '';
+                emptyState.classList.remove('hidden');
+            } else {
+                emptyState.classList.add('hidden');
+                container.innerHTML = filtered.map(buildProductCardHTML).join('');
+            }
+        }
+
+        // ---------------------------------------------------------
+        // 9. QUICK VIEW MODAL
+        // ---------------------------------------------------------
+        function openQuickView(productId) {
+            const p = products.find(item => item.id === productId);
+            if (!p) return;
+
+            const sizes = [16, 17, 18, 19, 20, 21, 22, 23, 24];
+            const metals = [
+                { name: '৯২৫ খাঁটি চাঁদি', extra: 0 },
+                { name: 'অষ্টধাতু', extra: 500 },
+                { name: '২১ ক্যারেট সোনা (অর্ডার সাপেক্ষে)', extra: 35000 }
+            ];
+
+            const content = document.getElementById('quick-view-content');
+            content.innerHTML = `
+                <div class="grid md:grid-cols-12 gap-6 sm:gap-8 items-center">
+                    <div class="md:col-span-5 bg-ivoryWarm rounded-2xl border border-borderGold p-6 flex flex-col items-center justify-center">
+                        <div class="w-48 h-48 sm:w-56 sm:h-56">
+                            ${createGemRingSVG(p.colors, p.shape, p.metalKey)}
+                        </div>
+                        <span class="mt-2 px-3 py-1 rounded-full bg-emeraldRoyal/10 text-emeraldRoyal text-xs font-bold">১০০% ল্যাব-সার্টিফায়েড</span>
+                    </div>
+
+                    <div class="md:col-span-7 space-y-4">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-goldAntique">${p.category} • ${p.origin}</span>
+                            <h2 class="text-2xl font-bold text-emeraldRoyal font-royal mt-1">${p.name}</h2>
+                            <p id="qv-price" class="text-2xl font-bold text-charcoalDeep mt-2">${formatBDT(p.price)}</p>
+                        </div>
+
+                        <p class="text-sm text-mutedGray leading-relaxed">${p.description}</p>
+
+                        <div class="grid grid-cols-2 gap-3 text-xs bg-ivoryWarm p-3 rounded-xl border border-borderGold/60">
+                            <div><span class="text-mutedGray">ওজন:</span> <strong class="text-charcoalDeep">${p.weight}</strong></div>
+                            <div><span class="text-mutedGray">উৎপত্তি:</span> <strong class="text-charcoalDeep">${p.origin}</strong></div>
+                        </div>
+
+                        <!-- Ring Size Picker -->
+                        <div>
+                            <div class="flex items-center justify-between mb-1.5">
+                                <label class="text-sm font-semibold text-charcoalDeep">আংটির সাইজ নির্বাচন করুন:</label>
+                                <button onclick="closeQuickView(); navigateTo('ringsize');" class="text-xs text-emeraldRoyal underline">মাপ জানুন</button>
+                            </div>
+                            <select id="qv-size-select" class="w-full px-3.5 py-2.5 rounded-xl bg-ivoryWarm border border-borderGold text-sm font-semibold focus:outline-none focus:border-goldAntique">
+                                ${sizes.map(s => `<option value="${s}" ${s === 20 ? 'selected' : ''}>সাইজ ${toBengaliNumber(s)}</option>`).join('')}
+                            </select>
+                        </div>
+
+                        <!-- Metal Picker -->
+                        <div>
+                            <label class="block text-sm font-semibold text-charcoalDeep mb-1.5">আংটির ধাতু নির্বাচন করুন:</label>
+                            <select id="qv-metal-select" onchange="updateQVPrice(${p.price})" class="w-full px-3.5 py-2.5 rounded-xl bg-ivoryWarm border border-borderGold text-sm font-semibold focus:outline-none focus:border-goldAntique">
+                                ${metals.map(m => `<option value="${m.name}" data-extra="${m.extra}">${m.name} ${m.extra > 0 ? '(+ ' + formatBDT(m.extra) + ')' : ''}</option>`).join('')}
+                            </select>
+                        </div>
+
+                        <button onclick="addQuickViewToCart(${p.id})" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emeraldRoyal to-emeraldDark text-goldSoft font-bold text-base shadow-md hover:brightness-110 transition-all">
+                            কার্টে যোগ করুন
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            const modal = document.getElementById('quick-view-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function updateQVPrice(basePrice) {
+            const select = document.getElementById('qv-metal-select');
+            const extra = parseInt(select.options[select.selectedIndex].dataset.extra || 0, 10);
+            document.getElementById('qv-price').textContent = formatBDT(basePrice + extra);
+        }
+
+        function addQuickViewToCart(productId) {
+            const size = parseInt(document.getElementById('qv-size-select').value, 10);
+            const metalSelect = document.getElementById('qv-metal-select');
+            const metalName = metalSelect.value;
+            const extraPrice = parseInt(metalSelect.options[metalSelect.selectedIndex].dataset.extra || 0, 10);
+            addToCart(productId, size, metalName, extraPrice);
+            closeQuickView();
+        }
+
+        function closeQuickView() {
+            const modal = document.getElementById('quick-view-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // ---------------------------------------------------------
+        // 10. SHOPPING CART & CHECKOUT LOGIC
+        // ---------------------------------------------------------
+        function addToCart(productId, size = 20, metal = '৯২৫ খাঁটি চাঁদি', extraPrice = 0) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+
+            const itemKey = `${productId}_${size}_${metal}`;
+            const existing = cart.find(item => item.key === itemKey);
+
+            if (existing) {
+                existing.qty += 1;
+            } else {
+                cart.push({
+                    key: itemKey,
+                    id: product.id,
+                    name: product.name,
+                    price: product.price + extraPrice,
+                    size: size,
+                    metal: metal,
+                    colors: product.colors,
+                    shape: product.shape,
+                    metalKey: product.metalKey,
+                    qty: 1
+                });
+            }
+
+            updateCartUI();
+            showToast(`“${product.name}” কার্টে যোগ হয়েছে!`);
+        }
+
+        function updateCartQty(key, delta) {
+            const item = cart.find(i => i.key === key);
+            if (!item) return;
+            item.qty += delta;
+            if (item.qty <= 0) {
+                cart = cart.filter(i => i.key !== key);
+            }
+            updateCartUI();
+        }
+
+        function removeFromCart(key) {
+            cart = cart.filter(i => i.key !== key);
+            updateCartUI();
+        }
+
+        function getCartTotal() {
+            return cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+        }
+
+        function updateCartUI() {
+            const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
+            const subtotal = getCartTotal();
+
+            document.getElementById('cart-badge').textContent = toBengaliNumber(totalItems);
+            document.getElementById('cart-drawer-count').textContent = `${toBengaliNumber(totalItems)}টি আংটি যুক্ত করা হয়েছে`;
+            document.getElementById('cart-subtotal').textContent = formatBDT(subtotal);
+            document.getElementById('checkout-btn').disabled = cart.length === 0;
+
+            const container = document.getElementById('cart-items-container');
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-16">
+                        <div class="w-16 h-16 mx-auto rounded-full bg-emeraldRoyal/10 text-emeraldRoyal flex items-center justify-center text-2xl mb-3">💍</div>
+                        <p class="font-bold text-emeraldRoyal mb-1">আপনার কার্টটি বর্তমানে খালি</p>
+                        <p class="text-xs text-mutedGray mb-4">পছন্দের রত্ন পাথরের আংটি বেছে নিন।</p>
+                        <button onclick="toggleCart(false); navigateTo('shop');" class="px-5 py-2 rounded-xl bg-emeraldRoyal text-goldSoft text-xs font-semibold">কালেকশন দেখুন</button>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = cart.map(item => `
+                <div class="bg-white p-3.5 rounded-2xl border border-borderGold flex gap-3.5 items-center shadow-xs">
+                    <div class="w-16 h-16 shrink-0 bg-ivoryWarm rounded-xl p-1 border border-borderGold/60">
+                        ${createGemRingSVG(item.colors, item.shape, item.metalKey)}
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h4 class="text-sm font-bold text-charcoalDeep truncate">${item.name}</h4>
+                        <p class="text-[11px] text-mutedGray">সাইজ: ${toBengaliNumber(item.size)} | ${item.metal}</p>
+                        <div class="flex items-center justify-between mt-2">
+                            <span class="text-sm font-bold text-emeraldRoyal">${formatBDT(item.price * item.qty)}</span>
+                            <div class="flex items-center gap-1.5">
+                                <button onclick="updateCartQty('${item.key}', -1)" class="w-6 h-6 rounded-md bg-ivoryWarm border border-borderGold text-xs font-bold hover:bg-emeraldRoyal hover:text-white">-</button>
+                                <span class="text-xs font-bold w-5 text-center">${toBengaliNumber(item.qty)}</span>
+                                <button onclick="updateCartQty('${item.key}', 1)" class="w-6 h-6 rounded-md bg-ivoryWarm border border-borderGold text-xs font-bold hover:bg-emeraldRoyal hover:text-white">+</button>
+                                <button onclick="removeFromCart('${item.key}')" aria-label="মুছুন" class="ml-1 text-red-500 hover:text-red-700 text-xs font-bold px-1">✕</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function toggleCart(open) {
+            const drawer = document.getElementById('cart-drawer');
+            const overlay = document.getElementById('cart-overlay');
+            if (open) {
+                overlay.classList.remove('hidden');
+                drawer.classList.remove('translate-x-full');
+            } else {
+                overlay.classList.add('hidden');
+                drawer.classList.add('translate-x-full');
+            }
+        }
+
+        function openCheckoutModal() {
+            if (cart.length === 0) return;
+            toggleCart(false);
+            document.getElementById('checkout-total-display').textContent = formatBDT(getCartTotal());
+            document.getElementById('checkout-form-view').classList.remove('hidden');
+            document.getElementById('checkout-success-view').classList.add('hidden');
+            const modal = document.getElementById('checkout-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeCheckoutModal() {
+            const modal = document.getElementById('checkout-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function submitOrder(e) {
+            e.preventDefault();
+            const randomId = Math.floor(1000 + Math.random() * 9000);
+            document.getElementById('order-id-text').textContent = `#RTN-${toBengaliNumber(randomId)}`;
+            document.getElementById('checkout-form-view').classList.add('hidden');
+            document.getElementById('checkout-success-view').classList.remove('hidden');
+            cart = [];
+            updateCartUI();
+            e.target.reset();
+        }
+
+        // ---------------------------------------------------------
+        // 11. ZODIAC GUIDE INTERACTIVITY
+        // ---------------------------------------------------------
+        function renderZodiacSection() {
+            const grid = document.getElementById('zodiac-grid');
+            grid.innerHTML = zodiacData.map(z => {
+                const isSelected = z.id === selectedZodiacId;
+                return `
+                    <button onclick="selectZodiac('${z.id}')" class="p-3.5 rounded-2xl border text-center transition-all ${isSelected ? 'bg-emeraldRoyal text-white border-goldAntique shadow-md scale-[1.02]' : 'bg-white text-charcoalDeep border-borderGold hover:border-goldAntique hover:bg-ivoryWarm'}">
+                        <div class="text-2xl mb-1 ${isSelected ? 'text-goldSoft' : 'text-emeraldRoyal'}">${z.symbol}</div>
+                        <div class="font-bold text-sm">${z.name}</div>
+                        <div class="text-[10px] ${isSelected ? 'text-emerald-100/80' : 'text-mutedGray'}">${z.eng}</div>
+                    </button>
+                `;
+            }).join('');
+
+            const z = zodiacData.find(item => item.id === selectedZodiacId);
+            const detail = document.getElementById('zodiac-detail-card');
+            detail.innerHTML = `
+                <div class="grid md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-4 text-center p-6 rounded-2xl bg-gradient-to-br from-emeraldRoyal to-emeraldDeep text-white border border-goldAntique/30">
+                        <div class="text-5xl text-goldSoft mb-2">${z.symbol}</div>
+                        <h2 class="text-2xl font-bold font-royal">${z.name} রাশি (${z.eng})</h2>
+                        <p class="text-xs text-emerald-100/80 mt-1">${z.dates}</p>
+                        <div class="mt-4 inline-block px-3 py-1 rounded-full bg-goldAntique/20 border border-goldSoft/40 text-goldSoft text-xs font-semibold">অধিপতি গ্রহ: ${z.planet}</div>
+                    </div>
+                    <div class="md:col-span-8 space-y-5">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-widest text-goldAntique">প্রস্তাবিত শুভ রত্ন</span>
+                            <h3 class="text-2xl sm:text-3xl font-bold text-emeraldRoyal font-royal mt-1">${z.stone}</h3>
+                            <p class="text-sm sm:text-base text-mutedGray mt-2 leading-relaxed">${z.desc}</p>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="p-4 rounded-2xl bg-ivoryWarm border border-borderGold">
+                                <p class="text-xs text-mutedGray mb-1">কোন আঙুলে পরবেন?</p>
+                                <p class="font-bold text-emeraldRoyal text-base">${z.finger}</p>
+                            </div>
+                            <div class="p-4 rounded-2xl bg-ivoryWarm border border-borderGold">
+                                <p class="text-xs text-mutedGray mb-1">উপযুক্ত ধাতু</p>
+                                <p class="font-bold text-emeraldRoyal text-base">${z.metal}</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-3 pt-2">
+                            <button onclick="goToShopCategory('${z.stoneKey}')" class="px-6 py-3 rounded-xl bg-gradient-to-r from-goldAntique to-[#b68d39] text-white font-semibold text-sm shadow-sm hover:brightness-105 transition-all">
+                                ${z.stoneKey}-এর আংটি দেখুন →
+                            </button>
+                            <button onclick="navigateTo('contact')" class="px-6 py-3 rounded-xl border border-emeraldRoyal text-emeraldRoyal font-semibold text-sm hover:bg-ivoryWarm transition-colors">
+                                বিশেষজ্ঞের ফ্রি পরামর্শ নিন
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function selectZodiac(id) {
+            selectedZodiacId = id;
+            renderZodiacSection();
+        }
+
+        // ---------------------------------------------------------
+        // 12. RING SIZE CALCULATOR
+        // ---------------------------------------------------------
+        function setMM(val) {
+            document.getElementById('mm-input').value = val;
+            calculateRingSize();
+        }
+
+        function calculateRingSize() {
+            const val = parseFloat(document.getElementById('mm-input').value);
+            const numEl = document.getElementById('result-size-number');
+            const noteEl = document.getElementById('result-size-note');
+
+            if (isNaN(val) || val < 44 || val > 75) {
+                numEl.textContent = '—';
+                noteEl.textContent = 'দয়া করে ৪৪ থেকে ৭৪ মিলিমিটারের মধ্যে সঠিক সংখ্যা লিখুন।';
+                return;
+            }
+
+            // Standard Indian/Bangladesh Ring Size approx formula: circumference (mm) - 40
+            const bdSize = Math.round(val - 40);
+            const diameter = (val / Math.PI).toFixed(1);
+            numEl.textContent = toBengaliNumber(bdSize);
+            noteEl.textContent = `পরিধি ${toBengaliNumber(val)} মিমি (ভেতরের ব্যাস প্রায় ${toBengaliNumber(diameter)} মিমি)`;
+        }
+
+        // ---------------------------------------------------------
+        // 13. FAQ ACCORDION & CONSULTATION FORM
+        // ---------------------------------------------------------
+        function renderFAQ() {
+            const container = document.getElementById('faq-container');
+            container.innerHTML = faqData.map((item, idx) => `
+                <div class="border border-borderGold rounded-2xl overflow-hidden bg-ivoryWarm/50">
+                    <button onclick="toggleFAQ(${idx})" class="w-full px-4 py-3.5 text-left flex items-center justify-between gap-3 text-sm font-bold text-charcoalDeep hover:text-emeraldRoyal">
+                        <span>${item.q}</span>
+                        <span id="faq-icon-${idx}" class="text-goldAntique text-lg font-bold transition-transform">+</span>
+                    </button>
+                    <div id="faq-ans-${idx}" class="hidden px-4 pb-4 text-xs sm:text-sm text-mutedGray leading-relaxed border-t border-borderGold/50 pt-2.5">
+                        ${item.a}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function toggleFAQ(idx) {
+            const ans = document.getElementById('faq-ans-' + idx);
+            const icon = document.getElementById('faq-icon-' + idx);
+            const isHidden = ans.classList.contains('hidden');
+            ans.classList.toggle('hidden');
+            icon.textContent = isHidden ? '−' : '+';
+        }
+
+        function handleConsultationSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('consult-name').value.trim();
+            showToast(`ধন্যবাদ ${name}! আপনার ফ্রি পরামর্শের অনুরোধ সফলভাবে জমা হয়েছে।`);
+            e.target.reset();
+        }
+
+        // ---------------------------------------------------------
+        // 14. TOAST NOTIFICATION SYSTEM (NO ALERT())
+        // ---------------------------------------------------------
+        function showToast(message) {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = 'pointer-events-auto bg-emeraldRoyal text-white border border-goldAntique/60 px-5 py-3.5 rounded-2xl shadow-xl flex items-center gap-3 text-sm font-medium max-w-sm transform transition-all duration-300 translate-y-2 opacity-0';
+            toast.innerHTML = `
+                <span class="w-6 h-6 shrink-0 rounded-full bg-goldAntique text-emeraldDark flex items-center justify-center font-bold text-xs">✓</span>
+                <span>${message}</span>
+            `;
+            container.appendChild(toast);
+
+            requestAnimationFrame(() => {
+                toast.classList.remove('translate-y-2', 'opacity-0');
+            });
+
+            setTimeout(() => {
+                toast.classList.add('translate-y-2', 'opacity-0');
+                setTimeout(() => toast.remove(), 300);
+            }, 3500);
+        }
+
+        // ---------------------------------------------------------
+        // 15. INITIALIZE APP ON LOAD
+        // ---------------------------------------------------------
+        window.addEventListener('DOMContentLoaded', () => {
+            renderFeaturedProducts();
+            renderCategoryFilters();
+            renderShopProducts();
+            renderZodiacSection();
+            renderFAQ();
+            updateCartUI();
+            navigateTo('home');
+        });
+    </script>
+</body>
+</html>
